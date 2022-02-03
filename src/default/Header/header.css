@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    height: 79px;
+    width: 100%;
+    border-bottom: 1px solid #EAEAEA;;
+    background-color: #fff;
+}
+.headerFlexing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.premFood {
+    align-items: center;
+}
+.headIcon {
+    width: 99px;
+    height: 26px;
+}
+.menuList {
+    padding: 0 20px;
+}
+.menuListLies {
+    display: flex;
+    justify-content: space-between;
+}
+.menuListLies > li {
+    font-family: Lota Grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    list-style: none;
+    padding: 0 30px;
+}
+
+.menuListLies li a {
+    text-decoration: none;
+}
+
+.secondIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vertic {
+    width: 14px;
+    height: 0.2px;
+    background: #000000;
+    transform: rotate(-90deg);
+    margin: 0 16px;
+}
+
+
+
+

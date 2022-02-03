@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Openregular';
+    src: url('fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'OpenLight';
+    src: url('fonts/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: 'OpenBold';
+    src: url('fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'OpenSemiBold';
+    src: url('fonts/OpenSans-Semibold.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Openregular;
+}
+.clear:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content{
+    width:1260px;
+    margin: 0px auto;
+}

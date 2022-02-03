@@ -1,0 +1,12 @@
+.tail{
+    height: 51px;
+    border-top: 1px solid #EAEAEA;
+    background: #F9F9F9;
+}
+.tailFlexing{
+    display: flex;
+    justify-content: space-between;
+}
+.tailFlexing div{
+    margin-top: 15px;
+}

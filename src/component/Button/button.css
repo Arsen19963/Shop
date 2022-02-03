@@ -1,0 +1,32 @@
+.btnMore{
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    margin-top: var(--margin-top);
+    border: var(--border);
+
+}
+.btnMoreOutline{
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--theme-white);
+    border-radius: var(--border-radius);
+    margin-top: var(--margin-top);
+    border: 1px solid var(--theme-black);
+
+}
+.btnText{
+    color: var(--theme-white);
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.btnTextOutline{
+    color: var(--theme-black);
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}

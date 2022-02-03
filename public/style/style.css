@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Los-Andes-Lota-Grotesque-Regular.otf"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./fonts/Los-Andes-Lota-Grotesque-Regular.otf?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/Los-Andes-Lota-Grotesque-Regular.otf") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/Los-Andes-Lota-Grotesque-Regular.otf")
+      format("woff"),
+    /* Modern Browsers */ url("./fonts/Los-Andes-Lota-Grotesque-Regular.otf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+* {
+  font-family: "Lota Grotesque";
+  color: var(--theme-dark);
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  --theme-dark: #2d2c4c;
+  --theme-medium: #575670;
+  --theme-bright: #7064fe;
+  --theme-light: #dadada;
+  --theme-accent: #ffb800;
+  --success: #27ae60;
+  --error: #e54623;
+  --theme-grey: #f7f8fa;
+  --theme-black:#000000;
+  --theme-white:#ffffff;
+  background-color: #e5e5e54f;
+}
+
+button {
+  --width: 135px;
+  --height: 44px;
+  --background-color: #53AE77;
+  --border-radius: 2px;
+  --margin-top: 54px;
+  --border: none;
+}
+
+.content {
+  max-width: 1440px;
+  min-width: 1440px;
+  margin: 0 auto;
+  /*padding: 0 15px;*/
+  box-sizing: border-box;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 36px;
+  margin: 0 0 36px;
+}

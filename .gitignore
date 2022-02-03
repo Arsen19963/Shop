@@ -1,0 +1,61 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/.idea
+.idea
+/build
+/dist
+/img
+ssr-document.txt
+/ssr-document.txt
+server.js
+0.server.js
+1.server.js
+2.server.js
+3.server.js
+4.server.js
+5.server.js
+6.server.js
+7.server.js
+8.server.js
+9.server.js
+10.server.js
+11.server.js
+12.server.js
+13.server.js
+14.server.js
+15.server.js
+16.server.js
+17.server.js
+18.server.js
+19.server.js
+20.server.js
+21.server.js
+22.server.js
+23.server.js
+24.server.js
+25.server.js
+26.server.js
+
+yarn-error.log
+package-lock.json
+react-loadable.json
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
