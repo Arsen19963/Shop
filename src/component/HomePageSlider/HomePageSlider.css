@@ -1,43 +1,51 @@
-.wrapSlider{
+.wrapSlider {
     width: 100%;
     display: flex;
     /*flex-direction: row;*/
     height: 800px;
-
+    border-bottom: 1px solid #EAEAEA;
 }
-.wrapSliderLeft{
+
+.wrapSliderLeft {
     width: 50%;
 }
-.wrapSliderRight{
+
+.wrapSliderRight {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
-.sliderImageItem{
+
+.sliderImageItem {
     width: 100%;
     height: 800px;
 }
-.sliderImage{
+
+.sliderImage {
     width: 100%;
     height: 100%;
 }
-.smallImg{
+
+.smallImg {
     width: 240px;
     height: 240px;
 }
+
 /*.smallOne{*/
 /*    width: 200px;*/
 /*    height: 300px;*/
 /*}*/
-.wrapSliderRight{
+.wrapSliderRight {
     display: flex;
     /*justify-content: center;*/
     align-items: center;
 }
-.kitkat{
+
+.kitkat {
     margin-top: 100px;
 }
-.someText{
+
+.someText {
     width: 534px;
     font-family: Lota Grotesque;
     font-style: normal;
@@ -47,7 +55,8 @@
     color: #000000;
     text-align: center;
 }
-.someTitle{
+
+.someTitle {
     width: 471px;
     color: #000000;
     font-family: Lota Grotesque;
@@ -57,16 +66,29 @@
     line-height: 36px;
     text-align: center;
 }
-.btnSeeAll{
+
+.btnSeeAll {
 
 }
-.wrapSliderRightImageBlock{
+
+.wrapSliderRightImageBlock {
     width: 240px;
     height: 240px;
     margin-top: 128px;
 }
-.wrapSliderRightImageBlock > img{
+
+.wrapSliderRightImageBlock > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.slick-dots {
+    margin-bottom: 40px;
+}
+
+.slick-dots li button:before {
+    font-size: 35px;
+    color: var(--theme-white);
+}
+

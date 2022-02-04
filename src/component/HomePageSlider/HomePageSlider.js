@@ -30,8 +30,6 @@ function SampleNextArrow(props) {
         </div>
     );
 };
-
-
 function SamplePrevArrow(props) {
     const {className, style, onClick} = props;
     return (
@@ -54,6 +52,7 @@ function SamplePrevArrow(props) {
         </div>
     );
 }
+
 
 export const HomePageSlider = () => {
     const [sliderImage, setSliderImage] = useState([
@@ -96,11 +95,8 @@ export const HomePageSlider = () => {
             }
         ]
     };
-
     return (
-
         <div className={'wrapSlider'}>
-
             <div className={'wrapSliderLeft'}>
                 <Slider {...settings} afterChange={(e) => setCheckItem(sliderImage[e])}>
                     {sliderImage.map((item, index) => (
@@ -110,7 +106,6 @@ export const HomePageSlider = () => {
                     ))}
                 </Slider>
             </div>
-
             <div className={'wrapSliderRight'}>
                 <div className={'wrapSliderRightImageBlock'}>
                 <img  src={checkItem.imgSmall} />

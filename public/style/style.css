@@ -14,7 +14,7 @@
 
 * {
   font-family: "Lota Grotesque";
-  color: var(--theme-dark);
+  /*color: var(--theme-dark);*/
   margin:0;
   padding: 0;
   box-sizing: border-box;
