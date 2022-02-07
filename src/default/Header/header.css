@@ -11,13 +11,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.premFood {
-    align-items: center;
-}
-.headIcon {
-    width: 99px;
-    height: 26px;
-}
+
 .menuList {
     padding: 0 20px;
 }

@@ -1,5 +1,5 @@
 .btnMore{
-    width: var(--width);
+    width: var(--m--width);
     height: var(--height);
     background-color: var(--background-color);
     border-radius: var(--border-radius);
@@ -8,7 +8,7 @@
 
 }
 .btnMoreOutline{
-    width: var(--width);
+    width: var(--s--width);
     height: var(--height);
     background-color: var(--theme-white);
     border-radius: var(--border-radius);

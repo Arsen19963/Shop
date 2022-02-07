@@ -1,35 +1,32 @@
-.catalogue{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+.catalogue {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
-.miniCatalogueSlider{
-    width: 100%;
-    /*justify-content: center;*/
-    /*height: 400px;*/
-    /*border: 1px solid black;*/
-
+.miniCatalogueSlider {
+  width: 100%;
+  /*justify-content: center;*/
+  /*height: 400px;*/
+  /*border: 1px solid black;*/
 }
-.sliderImageItems{
-    /*position: relative;*/
-    /*overflow: hidden;*/
-    padding: 10px;
-     border: 1px solid var(--theme-dark);
+.sliderImageItems {
+  /*position: relative;*/
+  /*overflow: hidden;*/
+  padding: 10px;
+  border: 1px solid var(--theme-dark);
 
-    height: 255px;
-    /*border: 1px solid;*/
-    /*display: flex!important;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    /*background-color: red;*/
-    /*padding-right: 35px;*/
+  height: 255px;
+  /*border: 1px solid;*/
+  /*display: flex!important;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*background-color: red;*/
+  /*padding-right: 35px;*/
 }
-.sliderImageItems >img{
-    /*width: 100%;*/
-    height: 173px;
-
-
+.sliderImageItems > img {
+  /*width: 100%;*/
+  height: 173px;
 }
 /*.wrapSliderImageItems{*/
 /*    width: 280px;*/
@@ -40,7 +37,10 @@
 /*    padding-right: 15px;*/
 /*}*/
 
-.slick-slide, .slick-slide *{ outline: none !important; }
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+}
 /*.miniCatalogueSlider .slick-slide {*/
 /*    margin: 0 10px;*/
 /*}*/
@@ -51,3 +51,15 @@
 /*.sliderImageItems{*/
 /*    margin-left: -130px;*/
 /*}*/
+.catalogueTitle {
+  margin-top: 150px;
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 70px;
+  /* margin-bottom: 31px; */
+}
+.catalogueLogo{
+    margin: 31px 0 43px;
+}

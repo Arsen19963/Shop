@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import "./catalogue.css"
 import {Button} from "../Button/Button";
 import Slider from "react-slick";
-
+import PremFoodsLogo from '../../default/PremFoodsLogo/PremFoodsLogo';
 import Flour from "../../../public/images/flour.png"
 import Pads from "../../../public/images/pads.png"
 import Sukkary from "../../../public/images/sukkary.png"
@@ -56,8 +56,12 @@ export const Catalogue = () => {
     };
     return (
         <div className={'catalogue content'}>
-            <div>
-                catalogue
+            <div className="catalogueTitle">
+                Catalogue
+            </div>
+            <div className="catalogueLogo">
+            <PremFoodsLogo />
+
             </div>
                     <div className={'miniCatalogueSlider'}>
                         <Slider {...settings} >

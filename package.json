@@ -1,9 +1,9 @@
 {
-  "name": "shop",
+  "name": "my-awesome-package",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack serve",
     "build": "webpack --config webpack.build.config.js",
     "server-build": "webpack --config webpack.server.config.js",
     "test": "react-scripts test",
@@ -41,7 +41,8 @@
     "redux-thunk": "^2.2.0",
     "style-loader": "^0.23.1",
     "universal-cookie": "^3.0.7",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "yarn": "^1.22.17"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,12 +62,20 @@
     "babel-runtime": "^6.26.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "react-router-dom": "^4.3.1",
-    "webpack": "^4.26.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-middleware": "^5.3.1",
+    "webpack-dev-server": "^3.11.3",
+    "webpack-hot-middleware": "^2.25.1",
+    "webpack-merge": "^5.8.0"
   },
   "resolutions": {
     "**/react": "17.0.2",
     "**/react-dom": "17.0.2"
-  }
+  },
+  "description": "The best package you will ever find",
+  "main": "index.js",
+  "repository": "https://github.com/Arsen19963/Shop.git",
+  "author": "Arsen19963 <ars.1996.bar@gmail.com>",
+  "license": "MIT"
 }

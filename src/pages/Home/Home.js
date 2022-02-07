@@ -7,6 +7,7 @@ import {About} from "../../component/about/about";
 import "./home.css";
 import {HomePageSlider} from "../../component/HomePageSlider/HomePageSlider";
 import {Catalogue} from "../../component/Catalogue/Catalogue";
+import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 
 export const Home = ({test}) => {
     return (
@@ -17,6 +18,7 @@ export const Home = ({test}) => {
                 <About/>
             </div>
             <Catalogue/>
+            <JoinTheTeam />
             <Footer/>
             <Tail/>
         </div>
