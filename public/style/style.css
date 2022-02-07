@@ -35,6 +35,8 @@ body {
   --theme-black: #000000;
   --theme-white: #ffffff;
   background-color: #e5e5e54f;
+  --theme-white-grey: #F9F9F9
+
 }
 
 button {

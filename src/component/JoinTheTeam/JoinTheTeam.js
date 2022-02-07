@@ -4,6 +4,7 @@ import { Button } from "../Button/Button";
 export default function JoinTheTeam() {
   return (
     <div className="joinTheTeam content">
+        <div className={'joinTheTeamContent'}>
       <div className="mainTitle">
         <p>Want to join our team? </p>
       </div>
@@ -15,6 +16,7 @@ export default function JoinTheTeam() {
         </p>
       </div>
       <Button title={"Submit for job"} outline={false} />
+        </div>
     </div>
   );
 }

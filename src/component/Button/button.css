@@ -5,6 +5,7 @@
     border-radius: var(--border-radius);
     margin-top: var(--margin-top);
     border: var(--border);
+    cursor: pointer;
 
 }
 .btnMoreOutline{
@@ -14,6 +15,7 @@
     border-radius: var(--border-radius);
     margin-top: var(--margin-top);
     border: 1px solid var(--theme-black);
+    cursor: pointer;
 
 }
 .btnText{

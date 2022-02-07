@@ -1,18 +1,14 @@
-import React, {useState} from "react";
-import "./catalogue.css"
-import {Button} from "../Button/Button";
-import Slider from "react-slick";
-import PremFoodsLogo from '../../default/PremFoodsLogo/PremFoodsLogo';
-import Flour from "../../../public/images/flour.png"
-import Pads from "../../../public/images/pads.png"
-import Sukkary from "../../../public/images/sukkary.png"
-import Beer from "../../../public/images/beer.png"
-import Nan from "../../../public/images/nan.png"
+import React,{useState} from 'react';
+import './partners.css';
 import {ProductCard} from "../ProductCard/ProductCard";
-// import {ProductCard} from "../ProductCard/ProductCard";
+import Flour from "../../../public/images/flour.png";
+import Beer from "../../../public/images/beer.png";
+import Pads from "../../../public/images/pads.png";
+import Sukkary from "../../../public/images/sukkary.png";
+import Nan from "../../../public/images/nan.png";
+import Slider from "react-slick";
 
-
-export const Catalogue = () => {
+export const Partners = ({stylish}) => {
     const [sliderImage, setSliderImage] = useState([
         {id: 0, img: Flour, title: 'Some product name'},
         {id: 1, img: Beer, title: 'Some product name'},
@@ -57,25 +53,20 @@ export const Catalogue = () => {
         ]
     };
     return (
-        <div className={'catalogue content'}>
-            <div className="catalogueTitle">
-                Catalogue
+        <div className='partnersPremierFoods content'>
+            <div className={'partnersPremierFoodsTitle'}>
+                Partners Premier Foods
             </div>
-            <div className="catalogueLogo">
-                <PremFoodsLogo/>
-            </div>
-            <div className={'miniCatalogueSlider'}>
+
+            <div className={'partnersPremierFoodsSlider'}>
                 <Slider {...settings} >
                     {sliderImage.map((item, index) => (
-                        <div className={'sliderImageItems'}>
+                        <div className={!stylish?'sliderImageItems':}>
                             <ProductCard key={index} src={item.img}/>
                         </div>
-                        ))}
+                    ))}
                 </Slider>
-
             </div>
-            <Button title={'Show all products'} outline={false}/>
         </div>
-    )
-
+    );
 }

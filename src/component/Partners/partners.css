@@ -1,0 +1,19 @@
+.partnersPremierFoods {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.partnersPremierFoodsTitle {
+    width: 100%;
+    max-width: 350px;
+    font-family: 'Lota Grotesque';
+    font-weight: 700;
+    font-size: 54px;
+    text-align: center;
+}
+.partnersPremierFoodsSlider{
+    width: 100%;
+}

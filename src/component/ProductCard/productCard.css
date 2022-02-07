@@ -1,0 +1,27 @@
+/*.productCard{*/
+/*    height: 255px;*/
+/*    width: 255px;*/
+/*    background-color: #F9F9F9;*/
+/*    border: 1px solid black;*/
+/*    border-radius: 2px;*/
+/*}*/
+/*.productCard >img{*/
+
+/*}*/
+.productCard {
+    /*padding: 10px;*/
+    width: 255px;
+    height: 255px;
+    background-color: var(--theme-white-grey);
+}
+.productCardBig{
+    width: 318px;
+    height: 220px;
+    background-color: var(--theme-white-grey);
+}
+.productCard > img{
+    padding-top: 41px;
+    padding-left: 64px;
+    overflow: hidden;
+}
+

@@ -14,8 +14,7 @@
   /*position: relative;*/
   /*overflow: hidden;*/
   padding: 10px;
-  border: 1px solid var(--theme-dark);
-
+  /*border: 1px solid var(--theme-dark);*/
   height: 255px;
   /*border: 1px solid;*/
   /*display: flex!important;*/
@@ -25,6 +24,7 @@
   /*padding-right: 35px;*/
 }
 .sliderImageItems > img {
+  padding: 41px 64px;
   /*width: 100%;*/
   height: 173px;
 }

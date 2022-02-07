@@ -1,31 +1,54 @@
 .joinTheTeam {
-  background: url("../../../public/images/workplace.jpg");
-  background-color:rgba(0, 0, 0, 0);;
- 
-  height: 900px;
-  max-width: 1280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 167px;
+    background: url("../../../public/images/workplace.jpg");
+    height: 900px;
+    max-width: 1280px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
+.joinTheTeam:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
 .mainTitle {
-  margin-top: 320px;
-  font-family: "Lota Grotesque";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 60px;
+    margin-top: 320px;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+
 }
+
 .textInfo {
-  font-family: "Lota Grotesque";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-  max-width: 560px;
-  width: 100%;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    max-width: 560px;
+    width: 100%;
+
 }
-.joinTheTeam>div{
+
+.joinTheTeam > div {
     color: var(--theme-white);
+}
+
+.joinTheTeamContent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 167px;
 }
