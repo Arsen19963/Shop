@@ -1,10 +1,10 @@
 import React from 'react';
 import './productCard.css';
 
-export const ProductCard = ({key, src}) => {
+export const ProductCard = ({key, src, classname}) => {
 
     return (
-        <div className='productCard'>
+        <div className={!classname?'productCard':'productCardBig'}>
             <img key={key} src={src}/>
         </div>
     );

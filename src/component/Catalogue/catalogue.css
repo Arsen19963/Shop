@@ -24,7 +24,7 @@
   /*padding-right: 35px;*/
 }
 .sliderImageItems > img {
-  padding: 41px 64px;
+  /*padding: 41px 64px;*/
   /*width: 100%;*/
   height: 173px;
 }
@@ -51,6 +51,14 @@
 /*.sliderImageItems{*/
 /*    margin-left: -130px;*/
 /*}*/
+.sliderImageItems>p{
+  font-family: 'Lota Grotesque';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /*text-align: center;*/
+}
 .catalogueTitle {
   margin-top: 150px;
   font-family: "Lota Grotesque";
@@ -58,8 +66,7 @@
   font-weight: bold;
   font-size: 54px;
   line-height: 70px;
+  margin-bottom: 100px;
   /* margin-bottom: 31px; */
 }
-.catalogueLogo{
-    margin: 31px 0 43px;
-}
+

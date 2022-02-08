@@ -30,13 +30,14 @@
     line-height: 60px;
 }
 .textContent{
-
+    max-width: 610px;
+    width: 100%;
     font-family: Lota Grotesque;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 26px;
-    margin-top: 40px;
+    /*line-height: 26px;*/
+    margin-top: 20px;
 }
 
 /*rigth part*/

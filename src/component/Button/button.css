@@ -1,15 +1,14 @@
-.btnMore{
-    width: var(--m--width);
+.btnMore {
+    width: var(--s--width);
     height: var(--height);
     background-color: var(--background-color);
     border-radius: var(--border-radius);
     margin-top: var(--margin-top);
     border: var(--border);
     cursor: pointer;
-
 }
-.btnMoreOutline{
-    width: var(--s--width);
+.btnMoreOutline {
+    width: 173px;
     height: var(--height);
     background-color: var(--theme-white);
     border-radius: var(--border-radius);
@@ -18,14 +17,14 @@
     cursor: pointer;
 
 }
-.btnText{
+.btnText {
     color: var(--theme-white);
     font-style: normal;
     font-size: 12px;
     line-height: 16px;
     text-transform: uppercase;
 }
-.btnTextOutline{
+.btnTextOutline {
     color: var(--theme-black);
     font-style: normal;
     font-size: 12px;

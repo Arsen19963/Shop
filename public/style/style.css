@@ -16,7 +16,7 @@
 
 * {
   font-family: "Lota Grotesque";
-  /*color: var(--theme-dark);*/
+  color: var(--theme-black);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,8 +35,8 @@ body {
   --theme-black: #000000;
   --theme-white: #ffffff;
   background-color: #e5e5e54f;
-  --theme-white-grey: #F9F9F9
-
+  --theme-white-grey: #F9F9F9;
+  --theme-border-color: #EAEAEA;
 }
 
 button {
@@ -47,7 +47,6 @@ button {
   --xl--width: 212px;
   --xxl--width: 212px;
   --xxxl-width: 236px;
-  
   --height: 44px;
   --background-color: #53ae77;
   --border-radius: 2px;

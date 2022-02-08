@@ -1,29 +1,28 @@
 import React,{useState} from 'react';
 import './partners.css';
 import {ProductCard} from "../ProductCard/ProductCard";
-import Flour from "../../../public/images/flour.png";
-import Beer from "../../../public/images/beer.png";
-import Pads from "../../../public/images/pads.png";
-import Sukkary from "../../../public/images/sukkary.png";
-import Nan from "../../../public/images/nan.png";
+import Makfa from "../../../public/images/makfa.png";
+import Purina from "../../../public/images/purina.png";
+import Nestle from "../../../public/images/nestle.png";
+import Rawlife from "../../../public/images/rawlife.png";
+
 import Slider from "react-slick";
 
-export const Partners = ({stylish}) => {
+export const Partners = () => {
     const [sliderImage, setSliderImage] = useState([
-        {id: 0, img: Flour, title: 'Some product name'},
-        {id: 1, img: Beer, title: 'Some product name'},
-        {id: 2, img: Pads, title: 'Some product name'},
-        {id: 3, img: Sukkary, title: 'Some product name'},
-        {id: 4, img: Nan, title: 'Some product name'},
+        {id: 0, img: Nestle, title: 'Some product name'},
+        {id: 1, img: Makfa, title: 'Some product name'},
+        {id: 2, img: Purina, title: 'Some product name'},
+        {id: 3, img: Rawlife, title: 'Some product name'},
     ]);
 
     var settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        initialSlide: 1,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        initialSlide: 0,
         responsive: [
 
             {
@@ -57,12 +56,11 @@ export const Partners = ({stylish}) => {
             <div className={'partnersPremierFoodsTitle'}>
                 Partners Premier Foods
             </div>
-
             <div className={'partnersPremierFoodsSlider'}>
                 <Slider {...settings} >
                     {sliderImage.map((item, index) => (
-                        <div className={!stylish?'sliderImageItems':}>
-                            <ProductCard key={index} src={item.img}/>
+                        <div className={'sliderImageItems'}>
+                            <ProductCard key={index} src={item.img} classname={true}/>
                         </div>
                     ))}
                 </Slider>

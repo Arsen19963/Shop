@@ -2,12 +2,13 @@
     background: url("../../../public/images/workplace.jpg");
     height: 900px;
     max-width: 1280px;
-
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
-
+/*.joinTheTeam div p {*/
+/*    color: var(--theme-white)!important;*/
+/*}*/
 .joinTheTeam:before {
     content: "";
     position: absolute;
@@ -40,8 +41,8 @@
 
 }
 
-.joinTheTeam > div {
-    color: var(--theme-white);
+.joinTheTeam  div  p {
+    color: var(--theme-white)!important;
 }
 
 .joinTheTeamContent {

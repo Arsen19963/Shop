@@ -9,10 +9,9 @@ import CopyRigth from "../../../public/icons/copyright1.svg";
 
 export const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer content">
 
-            <div className="content footerFlexing">
-
+            <div className="footerFlexing">
                 <div className="firstFoot everyElem">
                     <ul className="againFirstList">
                         <li><Link to={'/about'}>About</Link></li>
@@ -46,6 +45,16 @@ export const Footer = () => {
                     <div className="copyRight">
                         <div><img src={CopyRigth} alt="svgCopyRigth"/> <span>Premier Foods, Premier</span></div>
                         <div><span>Bevarages. All rights reserved</span></div>
+                    </div>
+                </div>
+            </div>
+            <div className="tail">
+                <div className="tailFlexing">
+                    <div>
+                        <p>ENGLISH</p>
+                    </div>
+                    <div>
+                        <p>Made by Smart Concept.</p>
                     </div>
                 </div>
             </div>

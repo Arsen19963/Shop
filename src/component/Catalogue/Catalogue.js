@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import "./catalogue.css"
 import {Button} from "../Button/Button";
 import Slider from "react-slick";
-import PremFoodsLogo from '../../default/PremFoodsLogo/PremFoodsLogo';
 import Flour from "../../../public/images/flour.png"
 import Pads from "../../../public/images/pads.png"
 import Sukkary from "../../../public/images/sukkary.png"
@@ -10,7 +9,7 @@ import Beer from "../../../public/images/beer.png"
 import Nan from "../../../public/images/nan.png"
 import {ProductCard} from "../ProductCard/ProductCard";
 // import {ProductCard} from "../ProductCard/ProductCard";
-
+import classNames from "classnames";
 
 export const Catalogue = () => {
     const [sliderImage, setSliderImage] = useState([
@@ -61,16 +60,15 @@ export const Catalogue = () => {
             <div className="catalogueTitle">
                 Catalogue
             </div>
-            <div className="catalogueLogo">
-                <PremFoodsLogo/>
-            </div>
             <div className={'miniCatalogueSlider'}>
                 <Slider {...settings} >
                     {sliderImage.map((item, index) => (
                         <div className={'sliderImageItems'}>
                             <ProductCard key={index} src={item.img}/>
+
+                            <p>{item.title}</p>
                         </div>
-                        ))}
+                    ))}
                 </Slider>
 
             </div>

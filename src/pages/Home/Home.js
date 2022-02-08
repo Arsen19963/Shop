@@ -22,7 +22,7 @@ export const Home = ({test}) => {
             <JoinTheTeam />
             <Partners />
             <Footer/>
-            <Tail/>
+            {/*<Tail/>*/}
         </div>
     );
 };

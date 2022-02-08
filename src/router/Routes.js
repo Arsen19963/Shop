@@ -15,6 +15,11 @@ const Home = Loadable({
   loader: () => import("../pages/Home/Home"),
   loading,
 });
+const About = Loadable({
+  loader: () => import("../pages/About/About"),
+  loading,
+});
+
 
 const Notfound = Loadable({
   loader: () => import("../pages/Notfound"),
@@ -28,6 +33,13 @@ export default [
     exact: true,
     sname: "Home",
     spath: "/",
+  },
+  {
+    component: About,
+    path: "/about",
+    exact: true,
+    sname: "About",
+    spath: "/about",
   },
   {
     component: Notfound,

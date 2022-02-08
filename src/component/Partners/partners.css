@@ -4,8 +4,8 @@
     flex-direction: column;
     align-items: center;
 
-}
 
+}
 .partnersPremierFoodsTitle {
     width: 100%;
     max-width: 350px;
@@ -13,7 +13,20 @@
     font-weight: 700;
     font-size: 54px;
     text-align: center;
+    margin-bottom: 60px;
 }
 .partnersPremierFoodsSlider{
     width: 100%;
+}
+/*.partnersPremierFoodsSlider > div{*/
+/*    padding: 0px 100px;*/
+/*}*/
+.sliderImageItems{
+        /*padding: 10px;*/
+    /*border: 1px solid ;*/
+    padding: 0;
+
+}
+.sliderImageItems:nth-child(2){
+    border: 1px solid red!important;
 }
