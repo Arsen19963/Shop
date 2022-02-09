@@ -15,7 +15,15 @@
     margin-top: var(--margin-top);
     border: 1px solid var(--theme-black);
     cursor: pointer;
-
+}
+.btnMoreOutlineBig{
+    width: 212px;
+    height: var(--height);
+    background-color: var(--theme-white);
+    border-radius: var(--border-radius);
+    margin-top: var(--margin-top);
+    border: 1px solid var(--theme-black);
+    cursor: pointer;
 }
 .btnText {
     color: var(--theme-white);

@@ -20,7 +20,7 @@ export const Home = ({test}) => {
             </div>
             <Catalogue/>
             <JoinTheTeam />
-            <Partners />
+            <Partners render={true} />
             <Footer/>
             {/*<Tail/>*/}
         </div>

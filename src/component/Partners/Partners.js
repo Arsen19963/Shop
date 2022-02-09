@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './partners.css';
 import {ProductCard} from "../ProductCard/ProductCard";
 import Makfa from "../../../public/images/makfa.png";
@@ -8,13 +8,16 @@ import Rawlife from "../../../public/images/rawlife.png";
 
 import Slider from "react-slick";
 
-export const Partners = () => {
+export const Partners = ({render}) => {
     const [sliderImage, setSliderImage] = useState([
         {id: 0, img: Nestle, title: 'Some product name'},
         {id: 1, img: Makfa, title: 'Some product name'},
         {id: 2, img: Purina, title: 'Some product name'},
         {id: 3, img: Rawlife, title: 'Some product name'},
     ]);
+    useEffect(()=>{
+        console.log('render slider')
+    },[render])
 
     var settings = {
         dots: false,
@@ -60,7 +63,7 @@ export const Partners = () => {
                 <Slider {...settings} >
                     {sliderImage.map((item, index) => (
                         <div className={'sliderImageItems'}>
-                            <ProductCard key={index} src={item.img} classname={true}/>
+                            <ProductCard key={index} src={item.img} classname={true} />
                         </div>
                     ))}
                 </Slider>

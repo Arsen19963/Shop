@@ -9,7 +9,8 @@ import CopyRigth from "../../../public/icons/copyright1.svg";
 
 export const Footer = () => {
     return (
-        <footer className="footer content">
+        <footer className="footer">
+            <div className={'content'}>
 
             <div className="footerFlexing">
                 <div className="firstFoot everyElem">
@@ -58,7 +59,8 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-
+            </div>
         </footer>
+
     );
 }

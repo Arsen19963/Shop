@@ -23,9 +23,9 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: [
-                        {
-                            loader: "style-loader"
-                        },
+                        // {
+                        //     loader: "style-loader"
+                        // },
                         {
                             loader: "css-loader"
                         }
@@ -33,7 +33,7 @@ module.exports = {
                 })
             },
             {
-                test: /\.(woff(2)?|ttf|eot|otf|svg|png|jpg|jpeg|gif)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(woff(2)?|ttf|eot|svg|png|jpg|jpeg|gif|otf)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                     {
                         loader: 'file-loader',

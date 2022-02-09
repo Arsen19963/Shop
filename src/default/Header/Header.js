@@ -2,13 +2,13 @@
 import PremFoodsLogo from "../PremFoodsLogo/PremFoodsLogo";
 import Global from "../../../public/icons/global1.svg";
 import Phone from "../../../public/icons/phone1.svg";
-import "./header.css";
+import './header.css'
 import "../../../public/style/style.css";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <header className="header">
+    <div className="header">
       <div className={"content headerFlexing"}>
         <PremFoodsLogo />
         {/*{menui list}*/}
@@ -40,6 +40,6 @@ export const Header = () => {
           <img src={Phone} alt="svgPhone" />
         </div>
       </div>
-    </header>
+    </div>
   );
 };
