@@ -7,8 +7,9 @@ import Nestle from "../../../public/images/nestle.png";
 import Rawlife from "../../../public/images/rawlife.png";
 
 import Slider from "react-slick";
+import {Button} from "../Button/Button";
 
-export const Partners = ({render}) => {
+export const Partners = ({render, size}) => {
     const [sliderImage, setSliderImage] = useState([
         {id: 0, img: Nestle, title: 'Some product name'},
         {id: 1, img: Makfa, title: 'Some product name'},
@@ -56,7 +57,7 @@ export const Partners = ({render}) => {
     };
     return (
         <div className='partnersPremierFoods content'>
-            <div className={'partnersPremierFoodsTitle'}>
+            <div className={size?'partnersPremierFoodsTitle':'partnersPremierFoodsTitleABigOne'}>
                 Partners Premier Foods
             </div>
             <div className={'partnersPremierFoodsSlider'}>
@@ -67,6 +68,9 @@ export const Partners = ({render}) => {
                         </div>
                     ))}
                 </Slider>
+            </div>
+            <div className="content aboutLastButton">
+                <Button title={'Read more about Partners'} outline={false}/>
             </div>
         </div>
     );

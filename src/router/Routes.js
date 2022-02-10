@@ -19,7 +19,10 @@ const About = Loadable({
   loader: () => import("../pages/About/About"),
   loading,
 });
-
+const Careers = Loadable({
+  loader: ()=> import("../pages/Careers/Careers"),
+  loading,
+})
 
 const Notfound = Loadable({
   loader: () => import("../pages/Notfound"),
@@ -40,6 +43,13 @@ export default [
     exact: true,
     sname: "About",
     spath: "/about",
+  },
+  {
+    component: Careers,
+    path: "/careers",
+    exact: true,
+    sname: "Careers",
+    spath: "/careers",
   },
   {
     component: Notfound,

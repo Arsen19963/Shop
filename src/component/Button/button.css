@@ -1,27 +1,16 @@
 .btnMore {
-    width: var(--s--width);
-    height: var(--height);
+    height: 44px;
+    padding: 14px 30px;
     background-color: var(--background-color);
     border-radius: var(--border-radius);
-    margin-top: var(--margin-top);
     border: var(--border);
     cursor: pointer;
 }
 .btnMoreOutline {
-    width: 173px;
-    height: var(--height);
+    height: 44px;
+    padding: 14px 30px;
     background-color: var(--theme-white);
     border-radius: var(--border-radius);
-    margin-top: var(--margin-top);
-    border: 1px solid var(--theme-black);
-    cursor: pointer;
-}
-.btnMoreOutlineBig{
-    width: 212px;
-    height: var(--height);
-    background-color: var(--theme-white);
-    border-radius: var(--border-radius);
-    margin-top: var(--margin-top);
     border: 1px solid var(--theme-black);
     cursor: pointer;
 }

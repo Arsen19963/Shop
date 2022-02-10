@@ -2,7 +2,6 @@
 import {connect} from "react-redux";
 import {Footer} from "../../default/footer/Footer";
 import {Header} from "../../default/Header/Header";
-import {Tail} from "../../component/Tail/Tail"
 import {About} from "../../component/about/about";
 import "./home.css";
 import {HomePageSlider} from "../../component/HomePageSlider/HomePageSlider";
@@ -20,9 +19,8 @@ export const Home = ({test}) => {
             </div>
             <Catalogue/>
             <JoinTheTeam />
-            <Partners render={true} />
+            <Partners render={true} size={true}/>
             <Footer/>
-            {/*<Tail/>*/}
         </div>
     );
 };

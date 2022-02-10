@@ -15,6 +15,16 @@
     text-align: center;
     margin-bottom: 60px;
 }
+.partnersPremierFoodsTitleABigOne{
+    width: 100%;
+    max-width: 670px;
+    font-family: 'Lota Grotesque';
+    font-weight: 700;
+    font-size: 54px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 .partnersPremierFoodsSlider{
     width: 100%;
 }

@@ -17,8 +17,12 @@ export const About = () => {
                     Mivina, Maggi, Fitness, Nan, Nestogen, Gerber, Fellix, Frieskes, Darling, ProPlan) official
                     Representative in Armenia.
                 </div>
-             <Button title={'Know more'} outline={false}/>
+                <div className={'textContentButton'}>
+                    <Button title={'Know more'} outline={false}/>
+                </div>
+
             </div>
+
             <div className={"imgContent"}>{/*rigth part*/}
                 <img className={"sweets"}  src={AboutImage} />
             </div>

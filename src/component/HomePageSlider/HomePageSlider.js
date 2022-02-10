@@ -117,7 +117,9 @@ export const HomePageSlider = () => {
                 <div className={"someTitle"}>
                     {checkItem.text}
                 </div>
-                <Button title={'SEE ALL PRODUCTS'} outline={true}/>
+                <div className="HomePageSliderButton">
+                    <Button title={'SEE ALL PRODUCTS'} outline={true}/>
+                </div>
             </div>
         </div>
     )

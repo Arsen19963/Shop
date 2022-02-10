@@ -57,6 +57,7 @@ export const Catalogue = () => {
     };
     return (
         <div className={'catalogue content'}>
+
             <div className="catalogueTitle">
                 Catalogue
             </div>
@@ -65,14 +66,16 @@ export const Catalogue = () => {
                     {sliderImage.map((item, index) => (
                         <div className={'sliderImageItems'}>
                             <ProductCard key={index} src={item.img}/>
-
                             <p>{item.title}</p>
                         </div>
                     ))}
                 </Slider>
 
             </div>
-            <Button title={'Show all products'} outline={false}/>
+            <div className="catalogueButton">
+                <Button title={'Show all products'} outline={false}/>
+            </div>
+
         </div>
     )
 

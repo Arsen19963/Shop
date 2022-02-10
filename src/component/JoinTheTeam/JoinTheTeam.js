@@ -1,6 +1,7 @@
 import React from "react";
 import "./joinTheTeam.css";
 import { Button } from "../Button/Button";
+
 export default function JoinTheTeam() {
   return (
     <div className="joinTheTeam content">
@@ -15,7 +16,9 @@ export default function JoinTheTeam() {
           Nestle, Rossia,
         </p>
       </div>
-      <Button title={"Submit for job"} outline={false} />
+            <div className="joinTheTeamButton">
+                <Button title={"Submit for job"} outline={false} />
+            </div>
         </div>
     </div>
   );

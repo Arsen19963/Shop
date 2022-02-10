@@ -15,7 +15,7 @@ export const Footer = () => {
             <div className="footerFlexing">
                 <div className="firstFoot everyElem">
                     <ul className="againFirstList">
-                        <li><Link to={'/about'}>About</Link></li>
+                        <li><Link to={'/about'}>Home</Link></li>
                         <li><Link to={'/catalogue'}>about us</Link></li>
                         <li><Link to={'/partners'}>partners</Link></li>
                         <li><Link to={'/team'}>team</Link></li>
@@ -25,7 +25,7 @@ export const Footer = () => {
                 <div className="secondFoot everyElem">
                     <ul>
                     <li><Link to={'/premierfoods'}>Premier foods</Link></li>
-                    <li><Link to={'/premierbeverages'}>premier beverages</Link></li>
+                    <li><Link to={'/premierbeverages'}>some text</Link></li>
                     </ul>
                 </div>
                 <div className="thirdFoot everyElem">
@@ -44,8 +44,8 @@ export const Footer = () => {
                         <li><Link to={'/youtube'}><img src={Youtube} alt="svgYoutube"/></Link></li>
                     </ul>
                     <div className="copyRight">
-                        <div><img src={CopyRigth} alt="svgCopyRigth"/> <span>Premier Foods, Premier</span></div>
-                        <div><span>Bevarages. All rights reserved</span></div>
+                        <div><img src={CopyRigth} alt="svgCopyRigth"/> <span>Premier Foods</span></div>
+                        <div><span> All rights reserved</span></div>
                     </div>
                 </div>
             </div>

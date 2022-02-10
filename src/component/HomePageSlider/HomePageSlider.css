@@ -91,4 +91,7 @@
     font-size: 35px;
     color: var(--theme-white);
 }
+.HomePageSliderButton{
+    margin-top: 40px;
+}
 

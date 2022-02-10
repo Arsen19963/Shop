@@ -2,7 +2,6 @@
     margin-top: 150px;
     display: flex;
     justify-content: space-between;
-
 }
 /*left part*/
 .aboutInfo{
@@ -36,13 +35,14 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    /*line-height: 26px;*/
+    line-height: 26px;
     margin-top: 20px;
 }
-
+.textContentButton{
+    margin-top: 40px;
+}
 /*rigth part*/
 .sweets{
     width: 580px;
     height: 481px;
-
 }
