@@ -9,6 +9,7 @@ a:active{
     width: 100%;
     /*display: flex;*/
     background: #F9F9F9;
+    margin-top: 60px;
 }
 .everyElem{
     margin: 70px 0;

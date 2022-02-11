@@ -61,6 +61,7 @@ export const Partners = ({render, size}) => {
                 Partners Premier Foods
             </div>
             <div className={'partnersPremierFoodsSlider'}>
+
                 <Slider {...settings} >
                     {sliderImage.map((item, index) => (
                         <div className={'sliderImageItems'}>
@@ -68,10 +69,11 @@ export const Partners = ({render, size}) => {
                         </div>
                     ))}
                 </Slider>
+
+
+
             </div>
-            <div className="content aboutLastButton">
-                <Button title={'Read more about Partners'} outline={false}/>
-            </div>
+
         </div>
     );
 }

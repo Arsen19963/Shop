@@ -1,0 +1,31 @@
+.InformationCardMainTitle{
+    font-family: 'Lota Grotesque';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+}
+.deadline{
+    font-family: 'Lota Grotesque';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    color: #C4C4C4;
+}
+.InformationCardText{
+    width: 100%;
+    /*max-width: 442px;*/
+    font-family: 'Lota Grotesque';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.careersItem{
+    width: 43%;
+    margin-top: 70px;
+}

@@ -1,0 +1,10 @@
+.careersInformationPanel{
+    margin-top: 113px;
+
+}
+.careersList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}

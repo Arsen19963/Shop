@@ -5,11 +5,8 @@ import Routes from "./Routes";
 
 export default () => {
   return (
-
       <BrowserRouter>
            {renderRoutes(Routes)}
       </BrowserRouter>
-
-
   );
 };

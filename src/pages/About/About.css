@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-around;
 }
+
 .weInIndustry > div {
     display: flex;
     flex-direction: column;
@@ -19,6 +20,7 @@
     height: 309px;
     /*border-right: 1px solid black;*/
 }
+
 .weInIndustry > div:not(:last-child) {
     border-right: 1px solid var(--theme-border-color);
 }
@@ -38,13 +40,14 @@
     font-weight: 400;
 }
 
-.ourTeamContainer{
+.ourTeamContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.ourTeamTitle{
-    /*margin: 150px 0px 83px;*/
+
+.ourTeamTitle {
+    margin: 150px 0px 83px;
     max-width: 383px;
     width: 100%;
     font-family: 'Lota Grotesque';
@@ -52,13 +55,15 @@
     font-weight: bold;
     font-size: 54px;
 }
-/*.aboutLastButton{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*}*/
-/*.aboutContent{*/
-/*    margin-top: 60px;*/
-/*}*/
-.ourTeamContainerButton{
+
+.aboutLastButton {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+
+}
+
+.ourTeamContainerButton {
     margin-top: 50px;
 }
+

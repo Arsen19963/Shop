@@ -5,6 +5,7 @@
     border-radius: var(--border-radius);
     border: var(--border);
     cursor: pointer;
+    transition: 0.4s;
 }
 .btnMoreOutline {
     height: 44px;
@@ -27,4 +28,7 @@
     font-size: 12px;
     line-height: 16px;
     text-transform: uppercase;
+}
+.btnMore:hover{
+    background-color: #08d95b;
 }

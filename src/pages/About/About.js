@@ -15,9 +15,7 @@ export const About = ({test}) => {
     return (
         <div>
             <Header/>
-
             <div className={'content aboutContent'}>
-
                 <div className={'historyAbout'}>
                     <InformationPanel
                         title={'History of Premier Foods'}
@@ -65,23 +63,23 @@ export const About = ({test}) => {
                     </p>
                 </div>
             </div>
-
             <div className="ourTeamContainer content">
                 <p className="ourTeamTitle">About our team</p>
                 <OurTeam/>
-
                 <div className="ourTeamContainerButton">
                     <Button title={'Know more ABOUT TEAM'} outline={false}/>
                 </div>
             </div>
             <JoinTheTeam/>
             <Partners render={true} size={false}/>
-
-
+            <div className="aboutLastButton">
+                <Button title={'Read more about Partners'} outline={false}/>
+            </div>
             <Footer/>
         </div>
     );
 };
+
 
 export default connect(
     (state) => ({
