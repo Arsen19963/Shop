@@ -1,4 +1,62 @@
-.showCareers{
+.showCareers {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.showCareersTitle {
+  width: 100%;
+  width: 665px;
+  font-family: "Lota Grotesque";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+}
+.showCareersEmploymentType > span:nth-child(1) {
+  font-family: "Lota Grotesque";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 26px;
+}
+.secondTitle {
+  font-family: "Lota Grotesque";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.showCareersText {
+  max-width: 673px;
+  width: 100%;
+  font-family: "Lota Grotesque";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+.showCareersRight>ul{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    list-style: none; 
+}
+.showCareersRight>ul>li{
+    font-family: 'Lota Grotesque';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration-line: underline;
+  
+}
+.showCareersRightTitle {
+  font-family: "Lota Grotesque";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
 }

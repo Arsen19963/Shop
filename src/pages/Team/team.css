@@ -1,0 +1,48 @@
+.contentWrapper {
+  border-bottom: 1px solid var(--theme-border-color);
+}
+.teamMain {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teamMainTitle {
+  font-family: "Lota Grotesque";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 88px;
+}
+.teamMainTitle_2 {
+  margin-top: 20px;
+  font-family: "Lota Grotesque";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px;
+  margin-bottom: 80px;
+}
+.workTeam{
+    margin-top: 100px;
+}
+.workTeamTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lota Grotesque";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 80px;
+}
+.TeamMembers{
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+}
+.teamMembersCards{
+  width: 350px;
+  height: 200px;
+}

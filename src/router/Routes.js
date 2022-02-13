@@ -1,6 +1,8 @@
 import React from "react";
 import Loadable from "react-loadable";
 
+
+
 const loading = () => <div>Loading...</div>;
 // function () {
 //     return new Promise(function(resolve, reject) {
@@ -23,6 +25,14 @@ const Careers = Loadable({
 })
 const ShowCareers = Loadable({
   loader: ()=> import("../pages/Careers/ShowCareers"),
+  loading,
+})
+const Team = Loadable({
+  loader: ()=>import("../pages/Team/Team"),
+  loading,
+})
+const ShowTeamMembers = Loadable({
+  loader: ()=>import("../pages/Team/ShowTeamMembers"),
   loading,
 })
 const Notfound = Loadable({
@@ -58,6 +68,20 @@ export default [
     exact: true,
     sname: "Careers",
     spath: "/careers",
+  },
+  {
+    component: Team,
+    path: "/team",
+    exact: true,
+    sname: "Team",
+    spath: "/team",
+  },
+  {
+    component: ShowTeamMembers,
+    path: "/team/:id",
+    exact: true,
+    sname: "Team",
+    spath: "/team",
   },
   {
     component: Notfound,
