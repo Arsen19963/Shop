@@ -15,7 +15,7 @@ export const InformationCard = ({ item }) => {
             <div className={"InformationCardText"}>
                 {item.text}
             </div>
-            <Link to={`careers/${item.id}`}>
+            <Link to={`careers/${item.id}`} className={'linkOff'}>
                 <Button title={'READ MORE'}/>
             </Link>
         </div>

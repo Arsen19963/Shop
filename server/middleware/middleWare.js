@@ -18,7 +18,7 @@ function staticStore(req, res, next) {
 
 
      Promise.all(requestMiddleWare.normalRequests(token,tokenType))
-        .then(function ([categories,userAuth, cart]){
+        .then(function ([categories,userAuth]){
 
             if(typeof categories.data.error != "undefined") {
                 if(!categories.data.error) {

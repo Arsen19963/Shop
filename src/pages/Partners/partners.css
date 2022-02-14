@@ -1,0 +1,43 @@
+.partnersMainDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 194px;
+}
+.leftPart{
+    margin: 0px 0px 30px;
+}
+.partnersMainTitle{
+    font-family: 'Lota Grotesque';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 70px;
+}
+.partnersProduct{
+    width: 100%;
+    max-width: 106px;
+    font-family: 'Lota Grotesque';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+}
+.partnersText{
+    width: 100%;
+    width: 579px;
+    font-family: 'Lota Grotesque';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+}
+.rightPart{
+    width: 100%;
+    max-width: 617px;
+    background-color: var(--theme-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}

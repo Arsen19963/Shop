@@ -35,10 +35,15 @@ const ShowTeamMembers = Loadable({
   loader: ()=>import("../pages/Team/ShowTeamMembers"),
   loading,
 })
+const Partners = Loadable({
+  loader: ()=>import("../pages/Partners/Partners"),
+  loading,
+})
 const Notfound = Loadable({
   loader: () => import("../pages/Notfound"),
   loading,
 });
+
 
 export default [
   {
@@ -82,6 +87,13 @@ export default [
     exact: true,
     sname: "Team",
     spath: "/team",
+  },
+  {
+    component: Partners,
+    path: "/partners",
+    exact: true,
+    sname: "Partners",
+    spath: "/partners",
   },
   {
     component: Notfound,

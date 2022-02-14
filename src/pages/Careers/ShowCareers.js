@@ -39,7 +39,7 @@ export const ShowCareers = ({ match, careers }) => {
                 (item, index) =>
                   item.id.toString() !== id.toString() && (
                     <li key={index}>
-                      <a href={`/careers/${item.id}`} > {item.title}</a>
+                      <a href={`/careers/${item.id}`} className={'showCareersA'}> {item.title}</a>
                     </li>
                   )
               )}

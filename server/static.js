@@ -6,8 +6,6 @@ const API_URL = 'http://api.gifttek.net';
 const SITE_URL = 'http://gifttek.net';   // home
 const LANGUAGE = '2';   // home
 
-
-
 const AUTH_API = '6fe163ef7dd2de632f4776dbf6ca8eb11d9772f9';
 
 module.exports.SITE_URL = SITE_URL;

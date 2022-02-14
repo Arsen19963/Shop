@@ -11,7 +11,7 @@ import { Button } from "../../component/Button/Button";
 import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 import { InformationPanel } from "../../component/InformationPanel/InformationPanel";
 
-export const About = ({ test }) => {
+export const About = ({ members }) => {
   return (
     <div>
       <div className={"content aboutContent"}>
@@ -53,7 +53,7 @@ export const About = ({ test }) => {
       </div>
       <div className="ourTeamContainer content">
         <p className="ourTeamTitle">About our team</p>
-        <OurTeam />
+        <OurTeam members={members} />
         <div className="ourTeamContainerButton">
           <Button title={"Know more ABOUT TEAM"} outline={false} />
         </div>
@@ -69,7 +69,7 @@ export const About = ({ test }) => {
 
 export default connect(
   (state) => ({
-    test: state.test,
+      members: state.members,
   }),
   null
 )(About);
