@@ -39,6 +39,10 @@ const Partners = Loadable({
   loader: ()=>import("../pages/Partners/Partners"),
   loading,
 })
+const Catalog = Loadable({
+  loader: ()=>import("../pages/Catalog/Catalog"),
+  loading,
+})
 const Notfound = Loadable({
   loader: () => import("../pages/Notfound"),
   loading,
@@ -94,6 +98,13 @@ export default [
     exact: true,
     sname: "Partners",
     spath: "/partners",
+  },
+  {
+    component: Catalog,
+    path: "/catalog",
+    exact: true,
+    sname: "Catalog",
+    spath: "/catalog",
   },
   {
     component: Notfound,

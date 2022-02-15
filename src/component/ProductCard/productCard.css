@@ -28,3 +28,21 @@
     /*overflow: hidden;*/
     align-items: center;
 }
+.catalogPageProduct{
+    width: 221px;
+    height: auto;
+}
+.catalogPageProductImage{
+    height: 221px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F9F9F9;
+
+}
+.catalogPageProductImage >img{
+    height: 160px;
+}
+.catalogPageProduct >p{
+    text-align: center;
+}

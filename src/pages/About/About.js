@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import { connect } from "react-redux";
 import { Footer } from "../../default/footer/Footer";
 import { Header } from "../../default/Header/Header";
@@ -12,6 +12,19 @@ import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 import { InformationPanel } from "../../component/InformationPanel/InformationPanel";
 
 export const About = ({ members }) => {
+    const [ourTeam,setOurTeam] = useState([])
+
+
+    useEffect(()=>{
+        let x= [];
+        members.forEach(item => {
+            if(item.team === 1){
+                x.push(item)
+            }
+        });
+        setOurTeam(x)
+    },[members])
+
   return (
     <div>
       <div className={"content aboutContent"}>
@@ -53,7 +66,7 @@ export const About = ({ members }) => {
       </div>
       <div className="ourTeamContainer content">
         <p className="ourTeamTitle">About our team</p>
-        <OurTeam members={members} />
+        <OurTeam members={ourTeam} />
         <div className="ourTeamContainerButton">
           <Button title={"Know more ABOUT TEAM"} outline={false} />
         </div>

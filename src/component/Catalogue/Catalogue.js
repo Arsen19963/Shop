@@ -1,26 +1,26 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import "./catalogue.css";
 import { Button } from "../Button/Button";
 import Slider from "react-slick";
-import Flour from "../../../public/images/flour.png";
-import Pads from "../../../public/images/pads.png";
-import Sukkary from "../../../public/images/sukkary.png";
-import Beer from "../../../public/images/beer.png";
-import Nan from "../../../public/images/nan.png";
 import { ProductCard } from "../ProductCard/ProductCard";
 
-export const Catalogue = () => {
-  const [sliderImage, setSliderImage] = useState([
-    { id: 0, img: Flour, title: "Some product name" },
-    { id: 1, img: Beer, title: "Some product name" },
-    { id: 2, img: Pads, title: "Some product name" },
-    { id: 3, img: Sukkary, title: "Some product name" },
-    { id: 4, img: Nan, title: "Some product name" },
-  ]);
+
+export const Catalogue = ({products}) => {
+const [product, setProduct] = useState([])
+
+  useEffect(()=>{
+      const anyting = [];
+      products.forEach((item,index) =>{
+        if(index<=5){
+          anyting.push(item)
+        }
+      })
+    setProduct(anyting)
+  },[products])
 
   var settings = {
     dots: false,
-    infinite: true,
+    infinite: product.length >= 5? true: false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 5,
@@ -31,7 +31,7 @@ export const Catalogue = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
+          infinite: false,
           dots: true,
         },
       },
@@ -57,10 +57,10 @@ export const Catalogue = () => {
       <div className="catalogueTitle">Catalogue</div>
       <div className={"miniCatalogueSlider"}>
         <Slider {...settings}>
-          {sliderImage.map((item, index) => (
+          {product.map((item, index) => (
             <div className={"sliderImageItems"}>
-              <ProductCard key={index} src={item.img} />
-              <p>{item.title}</p>
+              <ProductCard key={index} src={item.image} />
+              <p>{item.name}</p>
             </div>
           ))}
         </Slider>

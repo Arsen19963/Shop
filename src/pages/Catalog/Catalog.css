@@ -1,0 +1,15 @@
+.catalogFlexing{
+    display: flex;
+}
+.productList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.catalogFilters{
+    width: 200px;
+    border: 1px solid;
+}
+.catalogFilters > ul{
+    list-style-type: none;
+}

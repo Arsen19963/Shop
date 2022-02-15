@@ -46,3 +46,12 @@
   width: 350px;
   height: 200px;
 }
+.ourTeamMembers>div{
+  display: flex;
+  flex-wrap: wrap;
+}
+.workTeamChef{
+  display: flex;
+  flex-direction: column;
+align-content: center;
+}

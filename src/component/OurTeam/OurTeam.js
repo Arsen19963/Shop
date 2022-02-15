@@ -4,7 +4,7 @@ import "./ourTeam.css";
 import {Link} from "react-router-dom";
 import {Button} from "../Button/Button";
 
-export const OurTeam = ({ members }) => {
+export const OurTeam = ({ members}) => {
     return (
         <div className={"ourTeamWrapper content"}>
             {members.map((item, index) => (
