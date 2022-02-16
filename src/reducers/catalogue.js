@@ -1,10 +1,14 @@
 
 let data = {
     filter: [
-        {id: 1, name: 'filter name'},
+        {id: 1, name: 'All product'},
     ],
     categories: [
-        {id: 1, name: 'Category name'}
+        {id: 1, name: 'Category name'},
+        {id: 2, name: 'Some product name'},
+        {id: 3, name: 'Category name'},
+        {id: 4, name: 'Some product name'},
+
     ],
     products: [
         {
@@ -53,8 +57,8 @@ let data = {
         },
     ],
 }
-export default function catalog(state = data, action) {
-    if (action.type === 'ADD_CATALOG') {
+export default function catalogue(state = data, action) {
+    if (action.type === 'ADD_CATALOGUE') {
         return action.payload;
     }
     return state;

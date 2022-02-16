@@ -14,7 +14,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .slick-slide:nth-child(1) .productCardBig{
     border-left: 1px  solid var( --theme-border-color);
@@ -38,7 +37,6 @@
     justify-content: center;
     align-items: center;
     background: #F9F9F9;
-
 }
 .catalogPageProductImage >img{
     height: 160px;

@@ -5,19 +5,18 @@ import { Header } from "../../default/Header/Header";
 import { About } from "../../component/about/about";
 import "./home.css";
 import { HomePageSlider } from "../../component/HomePageSlider/HomePageSlider";
-
 import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 import { Partners } from "../../component/Partners/Partners";
-import {Catalogue} from "../../component/Catalogue/Catalogue";
+import {TrailCatalog} from "../../component/Catalogue/TrailCatalog";
 
-export const Home = ({ catalog }) => {
+export const Home = ({ catalogue }) => {
   return (
     <div>
       <div className={"content homeContent"}>
         <HomePageSlider />
         <About />
       </div>
-        <Catalogue products={catalog.products}/>
+        <TrailCatalog products={catalogue.products}/>
 
       <JoinTheTeam />
       <Partners render={true} size={true} />
@@ -27,7 +26,7 @@ export const Home = ({ catalog }) => {
 
 export default connect(
   (state) => ({
-      catalog: state.catalog,
+      catalogue: state.catalogue,
   }),
   null
 )(Home);

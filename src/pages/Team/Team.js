@@ -9,7 +9,6 @@ export const Team = ({members}) => {
     const [ourTeam, setOurTeam] = useState([])
     const [workTeam, setWorkTeam] = useState([])
     const [main, setMain] = useState([]);
-
     useEffect(() => {
         let x = [];
         let y = [];
@@ -33,7 +32,6 @@ export const Team = ({members}) => {
     }, [members])
     return (
         <div>
-
             <div className="contentWrapper content">
                 <div className="workTeamChef">
                     <p className="workTeamTitle">Chief executive officer</p>
@@ -55,7 +53,6 @@ export const Team = ({members}) => {
                     <OurTeam members={workTeam}/>
                 </div>
             </div>
-
         </div>
     );
 };

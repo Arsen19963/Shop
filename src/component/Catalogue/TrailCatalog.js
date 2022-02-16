@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from "react";
-import "./catalogue.css";
+import "./TrailCatalog.css";
 import { Button } from "../Button/Button";
 import Slider from "react-slick";
 import { ProductCard } from "../ProductCard/ProductCard";
 
 
-export const Catalogue = ({products}) => {
+export const TrailCatalog = ({products}) => {
 const [product, setProduct] = useState([])
 
   useEffect(()=>{

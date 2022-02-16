@@ -1,0 +1,42 @@
+.catalogFilters{
+
+    display: flex;
+    flex-direction: column;
+}
+.catalogFilter:first-child{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--theme-border-color);
+}
+.filterAndArrow{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.filtersText{
+    margin: 5px 0px 0px 17px;
+    font-family: 'Lota Grotesque';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+}
+.filterArrow{
+    margin-right: 5px;
+}
+.arrow{
+    transform: rotate(180deg);
+}
+ul>li{
+    margin: 5px 0px 0px 17px;
+
+    font-family: 'Lota Grotesque';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+.filtersName>li{
+    list-style-type: none;
+}
