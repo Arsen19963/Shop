@@ -10,7 +10,7 @@ export default () => {
     <BrowserRouter>
       <div>
         <Header />
-        {renderRoutes(Routes)}
+         {renderRoutes(Routes)}
         <Footer />
       </div>
     </BrowserRouter>

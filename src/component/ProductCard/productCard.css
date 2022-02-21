@@ -1,46 +1,78 @@
-.productCard {
-    /*padding: 10px;*/
-    width: 255px;
-    height: 255px;
-    background-color: var(--theme-white-grey);
-}
-.productCardBig{
-    width: 100%;
-    height: 194px;
-    background-color: var(--theme-white-grey);
-    border-right: 1px solid var( --theme-border-color);
-    border-top: 1px solid var( --theme-border-color);
-    border-bottom: 1px solid var( --theme-border-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.slick-slide:nth-child(1) .productCardBig{
-    border-left: 1px  solid var( --theme-border-color);
-}
-.productCard > img{
-    /*padding-top: 41px;*/
-    /*padding-left: 64px;*/
+.productCardBig > img {
     /*overflow: hidden;*/
+  /* align-items: center; */
 }
-.productCardBig > img{
-    /*overflow: hidden;*/
-    align-items: center;
-}
-.catalogPageProduct{
+.catalogPageProduct {
     width: 221px;
     height: auto;
 }
-.catalogPageProductImage{
-    height: 221px;
+.catalogPageProductImage {
+  height: 221px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  margin-bottom: 12px;
+}
+.catalogPageProductImage > img {
+    height: 160px;
+}
+.catalogPageProduct > p {
+    text-align: center;
+}
+.catalogPageProductTitle {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+.catalogPageProductCharacter {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #808080;
+    
+}
+.productCardBig{
+    width: 225px;
+    height: auto;
+}
+.productCardImageBig{
+    height: 225px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F9F9F9;
+    background: #f9f9f9;
+    margin-bottom: 12px;
 }
-.catalogPageProductImage >img{
+.productCardImageBig>img{
     height: 160px;
 }
-.catalogPageProduct >p{
-    text-align: center;
+.productCard {
+  width: 318px;
+  height: auto;
 }
+.productCardImage{
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.productCardImage>img{
+    height: 160px;
+}
+
+.slick-slide:nth-child(1) .productCardBig {
+  border-left: 1px solid var(--theme-border-color);
+}
+/* .productCard > img {
+  padding-top: 41px;
+  padding-left: 64px;
+  overflow: hidden;
+} */

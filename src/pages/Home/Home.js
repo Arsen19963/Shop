@@ -7,7 +7,7 @@ import "./home.css";
 import { HomePageSlider } from "../../component/HomePageSlider/HomePageSlider";
 import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 import { Partners } from "../../component/Partners/Partners";
-import {TrailCatalog} from "../../component/Catalogue/TrailCatalog";
+import { TrailCatalog } from "../../component/TrailCatalog/TrailCatalog";
 
 export const Home = ({ catalogue }) => {
   return (
@@ -16,8 +16,7 @@ export const Home = ({ catalogue }) => {
         <HomePageSlider />
         <About />
       </div>
-        <TrailCatalog products={catalogue.products}/>
-
+      <TrailCatalog products={catalogue.products} />
       <JoinTheTeam />
       <Partners render={true} size={true} />
     </div>
@@ -26,7 +25,7 @@ export const Home = ({ catalogue }) => {
 
 export default connect(
   (state) => ({
-      catalogue: state.catalogue,
+    catalogue: state.catalogue,
   }),
   null
 )(Home);

@@ -15,7 +15,6 @@ const ShowTeamMembers = ({match, members}) => {
                 <div className="showTeamMembersMain">
                         <img src={data.img}/>
                 </div>
-
                 <div className={"showMembersTitle"}>
                         <div className={'nameSurname'}>
                             {data.title}

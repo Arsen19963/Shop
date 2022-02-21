@@ -44,12 +44,14 @@ const Catalogue = Loadable({
   loader: ()=>import("../pages/Catalogue/Catalogue"),
   loading,
 })
-
+const CatalogueOpenPage = Loadable({
+  loader: ()=>import("../pages/Catalogue/CatalogueOpenPage"),
+  loading,
+})
 const Notfound = Loadable({
   loader: () => import("../pages/Notfound"),
   loading,
 });
-
 
 export default [
   {
@@ -104,6 +106,13 @@ export default [
   {
     component: Catalogue,
     path: "/catalogue",
+    exact: true,
+    sname: "Catalogue",
+    spath: "/catalogue",
+  },
+  {
+    component: CatalogueOpenPage,
+    path: "/catalogue/:id",
     exact: true,
     sname: "Catalogue",
     spath: "/catalogue",

@@ -4,10 +4,8 @@ import { Button } from "../Button/Button";
 import Slider from "react-slick";
 import { ProductCard } from "../ProductCard/ProductCard";
 
-
 export const TrailCatalog = ({products}) => {
 const [product, setProduct] = useState([])
-
   useEffect(()=>{
       const anyting = [];
       products.forEach((item,index) =>{
@@ -17,7 +15,6 @@ const [product, setProduct] = useState([])
       })
     setProduct(anyting)
   },[products])
-
   var settings = {
     dots: false,
     infinite: product.length >= 5? true: false,
@@ -59,8 +56,7 @@ const [product, setProduct] = useState([])
         <Slider {...settings}>
           {product.map((item, index) => (
             <div className={"sliderImageItems"}>
-              <ProductCard key={index} src={item.image} />
-              <p>{item.name}</p>
+              <ProductCard key={index} src={item.image} title={'Some product name'}/>
             </div>
           ))}
         </Slider>
