@@ -1,12 +1,15 @@
 ﻿import React, { useState } from "react";
 import PremFoodsLogo from "../PremFoodsLogo/PremFoodsLogo";
-import Global from "../../../public/icons/global1.svg";
+// import Global from "../../../public/icons/global1.svg";
 import Phone from "../../../public/icons/phone1.svg";
 import './header.css'
 import "../../../public/style/style.css";
 import { Link } from "react-router-dom";
+import {DropDown} from "../../component/DropDown/DropDown";
+import {connect} from "react-redux";
 
-export const Header = () => {
+export const Header = ({ header }) => {
+  const [language, setLanguage] = useState(['english','russian'])
   return (
     <div className="header">
       <div className={"content headerFlexing"}>
@@ -35,7 +38,9 @@ export const Header = () => {
 
         {/*erkrord ikonkeq@*/}
         <div className="secondIcons">
-          <img src={Global} alt="svgGlobal" />
+          <div>
+            <DropDown  header={true}/>
+          </div>
           <div className={"vertic"} />
           <img src={Phone} alt="svgPhone" />
         </div>
@@ -43,3 +48,9 @@ export const Header = () => {
     </div>
   );
 };
+export default connect(
+    (state) => ({
+      languages: state.languages,
+    }),
+    null
+)(Header);

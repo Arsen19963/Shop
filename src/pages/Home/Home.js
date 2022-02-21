@@ -16,9 +16,9 @@ export const Home = ({ catalogue }) => {
         <HomePageSlider />
         <About />
       </div>
-      <TrailCatalog products={catalogue.products} />
+      <TrailCatalog products={catalogue.products} name={'Catalogue'} button={true}/>
       <JoinTheTeam />
-      <Partners render={true} size={true} />
+      <Partners  render={true} size={true} />
     </div>
   );
 };

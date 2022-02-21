@@ -1,45 +1,53 @@
 import React from "react";
 import "./productCard.css";
+import {Link} from "react-router-dom";
 
 // import { useHistory } from "react-router-dom";
 
-export const ProductCard = ({ key, src, classname, catalogPage, partners, title }) => {
+export const ProductCard = ({ item,catalogPage, partners }) => {
  
     // const history = useHistory()
     // console.log(useHistory)
 
   if (catalogPage) {
     return (
+
+        <Link  to={`/catalogue/${item.id}`} key={item.id}>
       <div className={"catalogPageProduct"}>
         <div className={"catalogPageProductImage"}>
-          <img key={key} src={src} />
+          <img src={item.image} />
         </div>     
-        <p className="catalogPageProductTitle">Baltika 3 Classic</p>
-        <p className="catalogPageProductCharacter">0.45l</p>
+        <p className="catalogPageProductTitle">{item.name}</p>
+        <p className="catalogPageProductCharacter">{item.weight}</p>
       </div>
+        </Link>
     );
   } 
    if(partners){
     return (
-      <div className={"productCard"}>
-          <div className="productCardImage">
-                <img key={key} src={src} />
+        <div className={"sliderImageItemsP"}>
+          <div className={"productCard"}>
+              <div className="productCardImage">
+                    <img  src={item.image} />
+              </div>
+            {/*<div className="catalogPageProductTitle">*/}
+            {/*  <p>{item.name}</p>*/}
+            {/*</div>*/}
           </div>
-        <div className="catalogPageProductTitle">
-          <p>{title}</p>
         </div>
-      </div>
     );
   }else{
     return (
+        <Link to={`/catalogue/${item.id}`} key={item.id}>
         <div className={"productCardBig"}>
             <div className="productCardImageBig">
-                  <img key={key} src={src} />
+                  <img  src={item.image} />
             </div>
           <div className="catalogPageProductTitle">
-            <p>{title}</p>
+            <p>{item.name}</p>
           </div>
         </div>
+        </Link>
       );
   }
 };

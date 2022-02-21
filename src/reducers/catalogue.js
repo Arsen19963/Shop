@@ -11,7 +11,7 @@ let data = {
       id: 1,
       name: "Some product name",
       image:
-        "https://picsum.photos/200/300",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfaXFuYFT5x8jI7R4h8qftqEf4NsUp0CFOg&usqp=CAU",
       weight: 50,
       desc: "description product",
       fid: 1,
@@ -22,7 +22,7 @@ let data = {
       id: 2,
       name: "Some product name",
       image:
-        "https://picsum.photos/200/300",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfaXFuYFT5x8jI7R4h8qftqEf4NsUp0CFOg&usqp=CAU",
       weight: 50,
       desc: "description product",
       fid: 1,
@@ -33,7 +33,7 @@ let data = {
       id: 3,
       name: "Some product name",
       image:
-        "https://picsum.photos/200/300",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfaXFuYFT5x8jI7R4h8qftqEf4NsUp0CFOg&usqp=CAU",
       weight: 50,
       desc: "description product",
       fid: 1,
@@ -44,7 +44,7 @@ let data = {
       id: 4,
       name: "Some product name",
       image:
-        "https://picsum.photos/200/300",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfaXFuYFT5x8jI7R4h8qftqEf4NsUp0CFOg&usqp=CAU",
       weight: 50,
       desc: "description product",
       fid: 1,
@@ -55,7 +55,7 @@ let data = {
       id: 5,
       name: "Some product name",
       image:
-        "https://picsum.photos/200/300",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfaXFuYFT5x8jI7R4h8qftqEf4NsUp0CFOg&usqp=CAU",
       weight: 50,
       desc: "description product",
       fid: 1,
@@ -66,7 +66,7 @@ let data = {
       id: 6,
       name: "Some product name",
       image:
-        "https://picsum.photos/200/300",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfaXFuYFT5x8jI7R4h8qftqEf4NsUp0CFOg&usqp=CAU",
       weight: 50,
       desc: "description product",
       fid: 1,

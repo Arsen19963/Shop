@@ -87,10 +87,10 @@ import Slider from "react-slick";
 
 export const Partners = ({ render, size, partners }) => {
   const [sliderImage, setSliderImage] = useState([
-    { id: 0, img: Nestle, title: "Some product name" },
-    { id: 1, img: Makfa, title: "Some product name" },
-    { id: 2, img: Purina, title: "Some product name" },
-    { id: 3, img: Rawlife, title: "Some product name" },
+    { id: 0, image: Nestle, name: "Some product name" },
+    { id: 1, image: Makfa, name: "Some product name" },
+    { id: 2, image: Purina, name: "Some product name" },
+    { id: 3, image: Rawlife, name: "Some product name" },
   ]);
   useEffect(() => {
     console.log("render slider");
@@ -144,9 +144,7 @@ export const Partners = ({ render, size, partners }) => {
       <div className={"partnersPremierFoodsSlider"}>
         <Slider {...settings}>
           {sliderImage.map((item, index) => (
-            <div className={"sliderImageItems"}>
-              <ProductCard key={index} src={item.img} partners={partners}/>
-            </div>
+              <ProductCard item={item} partners={true}/>
           ))}
         </Slider>
       </div>

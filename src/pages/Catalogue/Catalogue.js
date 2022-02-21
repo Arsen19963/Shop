@@ -3,7 +3,6 @@ import {connect} from "react-redux";
 import "./Catalogue.css";
 import {ProductCard} from "../../component/ProductCard/ProductCard";
 import {DropDown} from "../../component/DropDown/DropDown";
-import {Link} from "react-router-dom"
 export const Catalogue = ({catalogue}) => {
     const [filter, setFilter] = useState(catalogue.filter || [])
     const [categories, setCategories] = useState(catalogue.categories || [])
@@ -20,15 +19,12 @@ export const Catalogue = ({catalogue}) => {
                         </div>
             <div className={'catalogFlexing'}>
                 <div className={'catalogFilters'}>
-                    <DropDown title={'Filters'} data={filter}/>
-                    <DropDown title={'Categories'} data={categories}/>
+                    <DropDown title={'Filters'} data={filter} catalogue={true}/>
+                    <DropDown title={'Categories'} data={categories} catalogue={true}/>
                 </div>
                 <div className={'productList'}>
                     {products.map((item, index) => (
-                        <Link to={`/catalogue/${item.id}`} key={index}>
-                            <ProductCard  src={item.image} catalogPage={true} title={'Baltika 3 Classic'} smallTitle={'0.45l'}/> 
-                            {/* //classname={'catalogPage'} */}
-                        </Link>
+                        <ProductCard  item={item} catalogPage={true}/>
                     ))}
                 </div>
             </div>

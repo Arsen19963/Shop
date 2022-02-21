@@ -10,6 +10,7 @@ import { OurTeam } from "../../component/OurTeam/OurTeam";
 import { Button } from "../../component/Button/Button";
 import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 import { InformationPanel } from "../../component/InformationPanel/InformationPanel";
+import {Link} from "react-router-dom";
 
 export const About = ({ members }) => {
     const [ourTeam,setOurTeam] = useState([])
@@ -68,13 +69,17 @@ export const About = ({ members }) => {
         <p className="ourTeamTitle">About our team</p>
         <OurTeam members={ourTeam} />
         <div className="ourTeamContainerButton">
-          <Button title={"Know more ABOUT TEAM"} outline={false} />
+            <Link to={'/team/'}>
+                <Button title={"Know more ABOUT TEAM"} outline={false} />
+            </Link>
         </div>
       </div>
       <JoinTheTeam />
       <Partners render={true} size={false} />
       <div className="aboutLastButton">
-        <Button title={"Read more about Partners"} outline={false} />
+          <Link to={'/partners/'}>
+              <Button title={"Read more about Partners"} outline={false} />
+          </Link>
       </div>
     </div>
   );

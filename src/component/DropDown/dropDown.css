@@ -28,15 +28,13 @@
 .arrow{
     transform: rotate(180deg);
 }
-ul>li{
+.filtersName>li{
     margin: 5px 0px 0px 17px;
-
     font-family: 'Lota Grotesque';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-}
-.filtersName>li{
     list-style-type: none;
+
 }

@@ -1,46 +1,85 @@
 .catalogueOpenPage {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 120px;
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-top: 78px;
+    flex-direction: column;
 }
-.catalogueOpenPageLeft {
 
-  width: 587px;
-  height: auto;
-  border-radius: 2px;
+.catalogueOpenPageFlexing {
+    display: flex;
+    justify-content: space-between;
+    /*margin: 0px 57px 0px 57px;*/
 }
+
+.catalogueOpenPageLeft {
+    width: 587px;
+    height: auto;
+    border-radius: 2px;
+    padding-right: 60px;
+
+}
+
 .catalogueOpenPageImg {
-  height: 639px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f9f9f9;
+    height: 639px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
 }
+
 .catalogueOpenPageImg > img {
-  height: 430px;
-  background-color: rgb(300, 300, 300);
+    height: 430px;
+
+    background-color: rgb(300, 300, 300);
 }
+
 .catalogueOpenPagText {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
+
 .catalogueOpenPageName {
-  font-family: "Lota Grotesque";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 23px;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 23px;
 }
+
 .catalogueOpenPageDescription {
-  font-family: "Lota Grotesque";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  color: #808080;
+    margin-top: 26px;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #808080;
 }
-.catalogueOpenPageIntroduction{
+
+.catalogueOpenPageIntroduction {
+    margin-top: 27px;
     width: 100%;
-    max-width: 381px;
+    /*max-width: 381px;*/
     height: 115px;
+    font-family: 'Lota Grotesque';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
 }
+.alsoProducts{
+    display: flex;
+    flex-direction: column;
+}
+.alsoProductsTitle{
+    font-family: 'Lota Grotesque';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 23px;
+}
+/*.productList{*/
+/*    display: flex;*/
+/*    !*justify-content: center;*!*/
+/*}*/

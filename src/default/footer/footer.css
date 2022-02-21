@@ -86,6 +86,8 @@ a:active{
 .tailFlexing{
     display: flex;
     justify-content: space-between;
+    /*align-content: center;*/
+    margin-top: 18px;
 }
 /*.tailFlexing div{*/
 /*    margin-top: 15px;*/
