@@ -5,11 +5,14 @@ import members from './teamMembers';
 import partners from "./partners";
 import catalogue from "./catalogue";
 import languages from "./languages";
+import lang from "./lang";
+
 export default combineReducers({
     test: test,
     careers: careers,
     members: members,
     partners: partners,
     catalogue: catalogue,
-    languages:languages,
+    languages: languages,
+    lang:lang,
 });

@@ -15,7 +15,6 @@ import {Link} from "react-router-dom";
 export const About = ({ members }) => {
     const [ourTeam,setOurTeam] = useState([])
 
-
     useEffect(()=>{
         let x= [];
         members.forEach(item => {
@@ -25,7 +24,6 @@ export const About = ({ members }) => {
         });
         setOurTeam(x)
     },[members])
-
   return (
     <div>
       <div className={"content aboutContent"}>

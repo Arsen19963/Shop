@@ -1,6 +1,6 @@
-﻿import React from "react";
+﻿import React, {useEffect} from "react";
 import { connect } from "react-redux";
-import { Footer } from "../../default/footer/Footer";
+// import { Footer } from "../../default/footer/Footer";
 import { Header } from "../../default/Header/Header";
 import { About } from "../../component/about/about";
 import "./home.css";
@@ -9,9 +9,13 @@ import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 import { Partners } from "../../component/Partners/Partners";
 import { TrailCatalog } from "../../component/TrailCatalog/TrailCatalog";
 
-export const Home = ({ catalogue }) => {
+export const Home = ({ catalogue,lang,setLang,languages}) => {
+    useEffect(()=>{
+        console.log('languages',languages[lang]['about'])
+    },[lang])
   return (
     <div>
+        <Header lang={lang} setLang={setLang} languages={languages[lang]} />
       <div className={"content homeContent"}>
         <HomePageSlider />
         <About />
@@ -22,10 +26,16 @@ export const Home = ({ catalogue }) => {
     </div>
   );
 };
-
 export default connect(
   (state) => ({
     catalogue: state.catalogue,
+    lang:state.lang,
+    languages:state.languages
   }),
-  null
+    dispatch => ({
+        setLang: data => {
+            dispatch({type:'ADD_LANG', payload:data})
+        }
+    })
 )(Home);
+

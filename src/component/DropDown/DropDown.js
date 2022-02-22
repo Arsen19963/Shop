@@ -1,16 +1,14 @@
 import React,{useState} from "react";
 import Arrow from "../../../public/images/rightArrow.png";
-import Global from "../../../public/icons/global1.svg";
 import './dropDown.css';
-export const DropDown = ({title, data, header }) => {
+export const DropDown = ({title, data }) => {
     const [open, setOpen] = useState(false)
-
     return (
            <div className={'catalogFilter'}>
-               <div className={header?"":"filterAndArrow"} onClick={()=>setOpen(!open)}>
-                   <p className={'filtersText'}>{header?"":title}</p>
+               <div className={"filterAndArrow"} onClick={()=>setOpen(!open)}>
+                   <p className={'filtersText'}>{title}</p>
                    <div className={'filterArrow'}>
-                       <img src={header ? Global : Arrow} className={open ?'arrow':''}/>
+                       <img src={Arrow} className={open ?'arrow':''}/>
                    </div>
                </div>
                {open && (
