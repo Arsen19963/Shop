@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from "react";
 import {connect} from "react-redux";
 import "./ShowTeamMembers.css";
+import {Header} from "../../default/Header/Header";
 
-const ShowTeamMembers = ({match, members}) => {
+const ShowTeamMembers = ({match, members,lang, setLang, languages}) => {
     const [data, setData] = useState(null);
     const {id} = match.params;
     useEffect(() => {
@@ -11,7 +12,10 @@ const ShowTeamMembers = ({match, members}) => {
     }, [id])
     if (data) {
         return (
+            <div>
+            <Header lang={lang} setLang={setLang} languages={languages[lang]} />
             <div className={'content showMembers'}>
+
                 <div className="showTeamMembersMain">
                         <img src={data.img}/>
                 </div>
@@ -27,6 +31,7 @@ const ShowTeamMembers = ({match, members}) => {
                         </div>
                 </div>
             </div>
+            </div>
         );
     } else {
         return null;
@@ -35,6 +40,12 @@ const ShowTeamMembers = ({match, members}) => {
 export default connect(
     (state) => ({
         members: state.members,
+        lang: state.lang,
+        languages: state.languages
     }),
-    null
+    dispatch => ({
+        setLang: data => {
+            dispatch({type:'ADD_LANG', payload:data})
+        }
+    })
 )(ShowTeamMembers);

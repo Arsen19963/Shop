@@ -3,10 +3,13 @@ import {connect} from "react-redux";
 import "./careers.css";
 import {InformationPanel} from "../../component/InformationPanel/InformationPanel";
 import {InformationCard} from "../../component/InformationCard/InformationCard";
+import {Header} from "../../default/Header/Header";
 
-export const Careers = ({careers}) => {
+export const Careers = ({careers,lang,setLang,languages}) => {
     return (
         <div>
+            <Header lang={lang} setLang={setLang} languages={languages[lang]} />
+
             <div className="careersInformationPanel">
                 <InformationPanel
                     title={"Careers"}
@@ -32,6 +35,12 @@ export const Careers = ({careers}) => {
 export default connect(
     (state) => ({
         careers: state.careers,
+        lang: state.lang,
+        languages: state.languages
     }),
-    null
+    dispatch => ({
+        setLang: data => {
+            dispatch({type:'ADD_LANG', payload:data})
+        }
+    })
 )(Careers);

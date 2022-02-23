@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import "./careers.css";
 import "./showCareers.css";
+import {Header} from "../../default/Header/Header";
 
-export const ShowCareers = ({ match, careers }) => {
+export const ShowCareers = ({ match, careers,lang,setLang,languages }) => {
   const [data, setData] = useState(null);
   const { id } = match.params;
   useEffect(() => {
@@ -13,6 +14,8 @@ export const ShowCareers = ({ match, careers }) => {
   if (data) {
     return (
       <div>
+        <Header lang={lang} setLang={setLang} languages={languages[lang]} />
+
         <div className="showCareers content">
           <div>
             <div className="showCareersTitle ">
@@ -55,6 +58,12 @@ export const ShowCareers = ({ match, careers }) => {
 export default connect(
   (state) => ({
     careers: state.careers,
+    lang: state.lang,
+    languages: state.languages
   }),
-  null
+    dispatch => ({
+      setLang: data => {
+        dispatch({type:'ADD_LANG', payload:data})
+      }
+    })
 )(ShowCareers);

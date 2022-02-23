@@ -1,15 +1,20 @@
 import React, {useState} from "react";
 import {connect} from "react-redux";
 import "./Catalogue.css";
-import {ProductCard} from "../../component/ProductCard/ProductCard";
-import {DropDown} from "../../component/DropDown/DropDown";
-export const Catalogue = ({catalogue}) => {
+import { ProductCard } from "../../component/ProductCard/ProductCard";
+import { DropDown } from "../../component/DropDown/DropDown";
+import { Header } from "../../default/Header/Header";
+export const Catalogue = ({catalogue,lang,setLang,languages}) => {
     const [filter, setFilter] = useState(catalogue.filter || [])
     const [categories, setCategories] = useState(catalogue.categories || [])
     const [products, setProducts] = useState(catalogue.products || [])
     return (
-        <div className={'content'}>
-                        <div className="catalogueMainTitles">
+        <div>
+            <Header lang={lang} setLang={setLang} languages={languages[lang]} />
+
+            <div className={'content'}>
+
+            <div className="catalogueMainTitles">
                             <div className="catalogueMainTitle">
                                 <p>All products in one place</p>
                             </div>
@@ -29,14 +34,22 @@ export const Catalogue = ({catalogue}) => {
                 </div>
             </div>
         </div>
+        </div>
+
     );
 };
 
 export default connect(
     (state) => ({
         catalogue: state.catalogue,
+        lang: state.lang,
+        languages: state.languages
     }),
-    null
+    dispatch => ({
+        setLang: data => {
+            dispatch({type:'ADD_LANG', payload:data})
+        }
+    })
 )(Catalogue);
 
 

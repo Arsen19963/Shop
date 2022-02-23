@@ -1,10 +1,9 @@
 import React, {useState,useEffect} from "react";
 import { connect } from "react-redux";
-import { Footer } from "../../default/footer/Footer";
 import { Header } from "../../default/Header/Header";
 import "./About.css";
 import { Partners } from "../../component/Partners/Partners";
-import Sukkary from "../../../public/images/sukkary.png";
+// import Sukkary from "../../../public/images/sukkary.png";
 import Star from "../../../public/images/star.png";
 import { OurTeam } from "../../component/OurTeam/OurTeam";
 import { Button } from "../../component/Button/Button";
@@ -12,8 +11,11 @@ import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 import { InformationPanel } from "../../component/InformationPanel/InformationPanel";
 import {Link} from "react-router-dom";
 
-export const About = ({ members }) => {
+export const About = ({ members,lang,setLang,languages }) => {
     const [ourTeam,setOurTeam] = useState([])
+    useEffect(()=>{
+        console.log('languages',languages[lang]['about'])
+    },[lang])
 
     useEffect(()=>{
         let x= [];
@@ -26,7 +28,8 @@ export const About = ({ members }) => {
     },[members])
   return (
     <div>
-      <div className={"content aboutContent"}>
+        <Header lang={lang} setLang={setLang} languages={languages[lang]} />
+        <div className={"content aboutContent"}>
         <div className={"historyAbout"}>
           <InformationPanel
             title={"History of Premier Foods"}
@@ -82,10 +85,15 @@ export const About = ({ members }) => {
     </div>
   );
 };
-
 export default connect(
   (state) => ({
       members: state.members,
+      lang:state.lang,
+      languages:state.languages,
   }),
-  null
+    dispatch => ({
+        setLang: data => {
+            dispatch({type:'ADD_LANG', payload:data})
+        }
+    })
 )(About);

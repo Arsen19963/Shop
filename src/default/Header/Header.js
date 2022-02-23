@@ -1,6 +1,5 @@
-﻿import React, {useState,useEffect} from "react";
+﻿import React, {useEffect} from "react";
 import PremFoodsLogo from "../PremFoodsLogo/PremFoodsLogo";
-import Global from "../../../public/icons/global1.svg";
 import Phone from "../../../public/icons/phone1.svg";
 import './header.css'
 import "../../../public/style/style.css";
@@ -8,17 +7,13 @@ import {Link} from "react-router-dom";
 import {DropDown2} from "../../component/DropDown/DropDown2.js";
 
 
-
 export const Header = ({setLang, lang,languages}) => {
     useEffect(()=>{
-        // console.log('setLang',setLang)
-        // console.log('lang',lang)
+        console.log('setLang',setLang)
+        console.log('lang',lang)
     },[])
-
     return (
         <div className="header">
-            <Header lang={lang} setLang={setLang} languages={languages[lang]} />
-
             <div className={"content headerFlexing"}>
                 <PremFoodsLogo/>
                 {/*{menui list}*/}
@@ -31,13 +26,13 @@ export const Header = ({setLang, lang,languages}) => {
                             <Link to={"/catalogue"}>{languages['catalog']}</Link>
                         </li>
                         <li>
-                            <Link to={"/careers"}>careers</Link>
+                            <Link to={"/careers"}>{languages['careers']}</Link>
                         </li>
                         <li>
-                            <Link to={"/partners"}>partners</Link>
+                            <Link to={"/partners"}>{languages['partners']}</Link>
                         </li>
                         <li>
-                            <Link to={"/team"}>team</Link>
+                            <Link to={"/team"}>{languages['team']}</Link>
                         </li>
                     </ul>
                 </div>

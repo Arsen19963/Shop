@@ -9,10 +9,10 @@ import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 import { Partners } from "../../component/Partners/Partners";
 import { TrailCatalog } from "../../component/TrailCatalog/TrailCatalog";
 
-export const Home = ({ catalogue,lang,setLang,languages}) => {
-    useEffect(()=>{
-        console.log('languages',languages[lang]['about'])
-    },[lang])
+export const Home = ({ catalogue, lang, setLang, languages}) => {
+    // useEffect(()=>{
+    //     console.log('languages',languages[lang]['about'])
+    // },[lang])
   return (
     <div>
         <Header lang={lang} setLang={setLang} languages={languages[lang]} />
@@ -29,8 +29,8 @@ export const Home = ({ catalogue,lang,setLang,languages}) => {
 export default connect(
   (state) => ({
     catalogue: state.catalogue,
-    lang:state.lang,
-    languages:state.languages
+    lang: state.lang,
+    languages: state.languages
   }),
     dispatch => ({
         setLang: data => {

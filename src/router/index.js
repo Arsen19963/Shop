@@ -9,7 +9,6 @@ export default () => {
   return (
     <BrowserRouter>
       <div>
-
          {renderRoutes(Routes)}
         <Footer />
       </div>

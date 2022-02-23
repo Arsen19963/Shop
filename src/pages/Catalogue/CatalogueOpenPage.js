@@ -4,8 +4,9 @@ import "./CatalogueOpenPage.css";
 import {Link} from "react-router-dom";
 import {ProductCard} from "../../component/ProductCard/ProductCard";
 import {TrailCatalog} from "../../component/TrailCatalog/TrailCatalog";
+import {Header} from "../../default/Header/Header";
 
-const CatalogueOpenPage = ({match, catalogue}) => {
+const CatalogueOpenPage = ({match, catalogue, lang, setLang, languages}) => {
     const [data, setData] = useState(null);
     const {id} = match.params;
     useEffect(() => {
@@ -17,7 +18,11 @@ const CatalogueOpenPage = ({match, catalogue}) => {
     }, [id]);
     if (data) {
         return (
+            <div>
+            <Header lang={lang} setLang={setLang} languages={languages[lang]} />
             <div className={"content catalogueOpenPage"}>
+
+
                 <div className={'catalogueOpenPageFlexing'}>
                     <div className="catalogueOpenPageLeft">
                         <div className="catalogueOpenPageImg">
@@ -42,6 +47,7 @@ const CatalogueOpenPage = ({match, catalogue}) => {
                     </div>
                 </div>
             </div>
+            </div>
         );
     } else {
         return null;
@@ -50,6 +56,12 @@ const CatalogueOpenPage = ({match, catalogue}) => {
 export default connect(
     (state) => ({
         catalogue: state.catalogue,
+        lang: state.lang,
+        languages: state.languages
     }),
-    null
+    dispatch => ({
+        setLang: data => {
+            dispatch({type:'ADD_LANG', payload:data})
+        }
+    })
 )(CatalogueOpenPage);
