@@ -8,14 +8,15 @@ import { HomePageSlider } from "../../component/HomePageSlider/HomePageSlider";
 import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 import { Partners } from "../../component/Partners/Partners";
 import { TrailCatalog } from "../../component/TrailCatalog/TrailCatalog";
+import {Footer} from "../../default/footer/Footer";
 
-export const Home = ({ catalogue, lang, setLang, languages}) => {
+export const Home = ({ catalogue}) => {
     // useEffect(()=>{
     //     console.log('languages',languages[lang]['about'])
     // },[lang])
   return (
     <div>
-        <Header lang={lang} setLang={setLang} languages={languages[lang]} />
+
       <div className={"content homeContent"}>
         <HomePageSlider />
         <About />
@@ -23,6 +24,7 @@ export const Home = ({ catalogue, lang, setLang, languages}) => {
       <TrailCatalog products={catalogue.products} name={'Catalogue'} button={true}/>
       <JoinTheTeam />
       <Partners  render={true} size={true} />
+
     </div>
   );
 };

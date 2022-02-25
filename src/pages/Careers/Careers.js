@@ -4,11 +4,12 @@ import "./careers.css";
 import {InformationPanel} from "../../component/InformationPanel/InformationPanel";
 import {InformationCard} from "../../component/InformationCard/InformationCard";
 import {Header} from "../../default/Header/Header";
+import {Footer} from "../../default/footer/Footer";
 
-export const Careers = ({careers,lang,setLang,languages}) => {
+export const Careers = ({careers}) => {
     return (
         <div>
-            <Header lang={lang} setLang={setLang} languages={languages[lang]} />
+
 
             <div className="careersInformationPanel">
                 <InformationPanel
@@ -29,6 +30,8 @@ export const Careers = ({careers,lang,setLang,languages}) => {
                     ))}
                 </div>
             </div>
+
+
         </div>
     );
 };

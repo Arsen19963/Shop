@@ -5,8 +5,9 @@ import {Link} from "react-router-dom";
 import {ProductCard} from "../../component/ProductCard/ProductCard";
 import {TrailCatalog} from "../../component/TrailCatalog/TrailCatalog";
 import {Header} from "../../default/Header/Header";
+import {Footer} from "../../default/footer/Footer";
 
-const CatalogueOpenPage = ({match, catalogue, lang, setLang, languages}) => {
+const CatalogueOpenPage = ({match, catalogue}) => {
     const [data, setData] = useState(null);
     const {id} = match.params;
     useEffect(() => {
@@ -19,7 +20,7 @@ const CatalogueOpenPage = ({match, catalogue, lang, setLang, languages}) => {
     if (data) {
         return (
             <div>
-            <Header lang={lang} setLang={setLang} languages={languages[lang]} />
+
             <div className={"content catalogueOpenPage"}>
 
 
@@ -47,6 +48,7 @@ const CatalogueOpenPage = ({match, catalogue, lang, setLang, languages}) => {
                     </div>
                 </div>
             </div>
+
             </div>
         );
     } else {

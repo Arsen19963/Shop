@@ -8,10 +8,10 @@ import {DropDown2} from "../../component/DropDown/DropDown2.js";
 
 
 export const Header = ({setLang, lang,languages}) => {
-    useEffect(()=>{
-        console.log('setLang',setLang)
-        console.log('lang',lang)
-    },[])
+    // useEffect(()=>{
+    //     console.log('setLang',setLang)
+    //     console.log('lang',lang)
+    // },[])
     return (
         <div className="header">
             <div className={"content headerFlexing"}>

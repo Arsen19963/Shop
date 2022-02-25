@@ -5,10 +5,10 @@ import {connect} from "react-redux";
 import "./partners.css";
 import {InformationCard} from "../../component/InformationCard/InformationCard";
 
-export const Partners = ({partners, lang, setLang, languages}) => {
+export const Partners = ({partners}) => {
     return (
         <div>
-            <Header lang={lang} setLang={setLang} languages={languages[lang]}/>
+
             <div className={'content '}>
                 {partners.map((item, index) => (
                     <div key={index} className={'partnersMainDiv'}>
@@ -32,6 +32,8 @@ export const Partners = ({partners, lang, setLang, languages}) => {
 
                 ))}
             </div>
+
+
         </div>
     );
 };

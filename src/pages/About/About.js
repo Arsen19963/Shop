@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from "react";
 import { connect } from "react-redux";
 import { Header } from "../../default/Header/Header";
+import {Footer} from "../../default/footer/Footer";
 import "./About.css";
 import { Partners } from "../../component/Partners/Partners";
 // import Sukkary from "../../../public/images/sukkary.png";
@@ -11,11 +12,11 @@ import JoinTheTeam from "../../component/JoinTheTeam/JoinTheTeam";
 import { InformationPanel } from "../../component/InformationPanel/InformationPanel";
 import {Link} from "react-router-dom";
 
-export const About = ({ members,lang,setLang,languages }) => {
+export const About = ({ members }) => {
     const [ourTeam,setOurTeam] = useState([])
-    useEffect(()=>{
-        console.log('languages',languages[lang]['about'])
-    },[lang])
+    // useEffect(()=>{
+    //     console.log('languages',languages[lang]['about'])
+    // },[lang])
 
     useEffect(()=>{
         let x= [];
@@ -28,7 +29,7 @@ export const About = ({ members,lang,setLang,languages }) => {
     },[members])
   return (
     <div>
-        <Header lang={lang} setLang={setLang} languages={languages[lang]} />
+
         <div className={"content aboutContent"}>
         <div className={"historyAbout"}>
           <InformationPanel

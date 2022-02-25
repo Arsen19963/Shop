@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { OurTeam } from "../../component/OurTeam/OurTeam";
-// import { Footer } from "../../default/footer/Footer";
 import { connect } from "react-redux";
 import "./team.css";
 import {Header} from "../../default/Header/Header";
+import {Footer} from "../../default/footer/Footer";
 
 const sortByItemTypes = (members) => {
   const teams = [];
@@ -22,7 +22,7 @@ const sortByItemTypes = (members) => {
   return { teams, boards, defaults };
 };
 
-export const Team = ({ members, lang, setLang, languages }) => {
+export const Team = ({ members }) => {
   const [ourTeam, setOurTeam] = useState([]);
   const [workTeam, setWorkTeam] = useState([]);
   const [main, setMain] = useState([]);
@@ -37,7 +37,7 @@ export const Team = ({ members, lang, setLang, languages }) => {
   }, [members]);
   return (
     <div>
-      <Header lang={lang} setLang={setLang} languages={languages[lang]} />
+
       <div className="contentWrapper content">
         <div className="workTeamChef">
           <p className="workTeamTitle">Chief executive officer</p>
@@ -59,6 +59,7 @@ export const Team = ({ members, lang, setLang, languages }) => {
           <OurTeam members={workTeam} />
         </div>
       </div>
+     d
     </div>
   );
 };

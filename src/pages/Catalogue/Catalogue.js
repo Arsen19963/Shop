@@ -4,13 +4,14 @@ import "./Catalogue.css";
 import { ProductCard } from "../../component/ProductCard/ProductCard";
 import { DropDown } from "../../component/DropDown/DropDown";
 import { Header } from "../../default/Header/Header";
-export const Catalogue = ({catalogue,lang,setLang,languages}) => {
+import {Footer} from "../../default/footer/Footer";
+export const Catalogue = ({catalogue}) => {
     const [filter, setFilter] = useState(catalogue.filter || [])
     const [categories, setCategories] = useState(catalogue.categories || [])
     const [products, setProducts] = useState(catalogue.products || [])
     return (
         <div>
-            <Header lang={lang} setLang={setLang} languages={languages[lang]} />
+
 
             <div className={'content'}>
 
@@ -34,6 +35,8 @@ export const Catalogue = ({catalogue,lang,setLang,languages}) => {
                 </div>
             </div>
         </div>
+
+
         </div>
 
     );

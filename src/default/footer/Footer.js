@@ -6,7 +6,7 @@ import Instagram from "../../../public/icons/instagram11.svg"
 import Youtube from "../../../public/icons/youtub1.svg"
 import CopyRigth from "../../../public/icons/copyright1.svg";
 
-export const Footer = () => {
+export const Footer = ({setLang, lang,languages}) => {
     return (
         <footer className="footer">
             <div className={'content'}>
@@ -14,10 +14,23 @@ export const Footer = () => {
                 <div className="footerFlexing">
                     <div className="firstFoot everyElem">
                         <ul className="againFirstList">
-                            <li><Link to={'/about'}>Home</Link></li>
-                            <li><Link to={'/catalogue'}>about us</Link></li>
-                            <li><Link to={'/partners'}>partners</Link></li>
-                            <li><Link to={'/team'}>team</Link></li>
+                            <li>
+                                <Link to={"/about"}>{languages['about_us']}</Link>
+                            </li>
+                            {/*<li><Link to={'/about'}>Home</Link></li>*/}
+                            <li>
+                                <Link to={"/catalogue"}>{languages['catalog']}</Link>
+                            </li>
+                            {/*<li><Link to={'/catalogue'}>about us</Link></li>*/}
+
+                            <li>
+                                <Link to={"/partners"}>{languages['partners']}</Link>
+                            </li>
+                            {/*<li><Link to={'/partners'}>partners</Link></li>*/}
+                            <li>
+                                <Link to={"/team"}>{languages['team']}</Link>
+                            </li>
+                            {/*<li><Link to={'/team'}>team</Link></li>*/}
                         </ul>
                     </div>
 

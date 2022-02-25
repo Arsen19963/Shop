@@ -3,8 +3,9 @@ import { connect } from "react-redux";
 import "./careers.css";
 import "./showCareers.css";
 import {Header} from "../../default/Header/Header";
+import {Footer} from "../../default/footer/Footer";
 
-export const ShowCareers = ({ match, careers,lang,setLang,languages }) => {
+export const ShowCareers = ({ match, careers}) => {
   const [data, setData] = useState(null);
   const { id } = match.params;
   useEffect(() => {
@@ -14,7 +15,6 @@ export const ShowCareers = ({ match, careers,lang,setLang,languages }) => {
   if (data) {
     return (
       <div>
-        <Header lang={lang} setLang={setLang} languages={languages[lang]} />
 
         <div className="showCareers content">
           <div>
@@ -49,6 +49,7 @@ export const ShowCareers = ({ match, careers,lang,setLang,languages }) => {
             </ul>
           </div>
         </div>
+
       </div>
     );
   } else {
