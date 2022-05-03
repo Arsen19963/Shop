@@ -26,11 +26,11 @@
 .partnersPremierFoodsSlider{
     width: 100%;
 }
-.sliderImageItems{
+/* .sliderImageItems{
     width: 100%!important; 
     padding: 0!important; 
-}
-.sliderImageItemsP{
+} */
+/* .sliderImageItemsP{
     width: 100%!important;
     padding: 0!important;
 }
@@ -41,8 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .slick-slide:nth-child(1) .sliderImageItemsP {
     border-left: 1px solid var(--theme-border-color);
-}
+} */

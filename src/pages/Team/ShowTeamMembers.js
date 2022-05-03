@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {connect} from "react-redux";
 import "./ShowTeamMembers.css";
-import {Header} from "../../default/Header/Header";
-import {Footer} from "../../default/footer/Footer";
 
 const ShowTeamMembers = ({match, members}) => {
     const [data, setData] = useState(null);

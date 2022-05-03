@@ -1,6 +1,7 @@
 let data = {
     en:{
         about:'about_en',
+        products: 'products_en',
         catalog:'catalog_en',
         careers:'careers_en',
         partners:'partners_en',
@@ -9,6 +10,7 @@ let data = {
     },
     ru:{
         about:'about_ru',
+        products: 'products_ru',
         catalog:'catalog_ru',
         careers:'careers_ru',
         partners:'partners_ru',
@@ -18,6 +20,7 @@ let data = {
     },
     hy:{
         about:'about_hy',
+        products: 'products_hy',
         catalog:'catalog_hy',
         careers:'careers_hy',
         partners:'partners_hy',

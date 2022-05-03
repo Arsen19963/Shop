@@ -1,10 +1,6 @@
-.productCardBig > img {
-    /*overflow: hidden;*/
-  /* align-items: center; */
-}
 .catalogPageProduct {
-    width: 221px;
-    height: auto;
+  width: 221px;
+  height: auto;
 }
 .catalogPageProductImage {
   height: 221px;
@@ -15,64 +11,97 @@
   margin-bottom: 12px;
 }
 .catalogPageProductImage > img {
-    height: 160px;
+  height: 160px;
 }
 .catalogPageProduct > p {
-    text-align: center;
+  text-align: center;
 }
 .catalogPageProductTitle {
-    font-family: "Lota Grotesque";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
 }
 .catalogPageProductCharacter {
-    font-family: "Lota Grotesque";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    color: #808080;
-    
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #808080;
 }
-.productCardBig{
-    width: 225px;
-    height: auto;
-}
-.productCardImageBig{
-    height: 225px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f9f9f9;
-    margin-bottom: 12px;
-}
-.productCardImageBig>img{
-    height: 160px;
-}
-.productCard {
-  width: 318px;
+.productCardBig {
+  /* width: 225px; */
   height: auto;
 }
-.productCardImage{
-    height: 223px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 12px;
+.productCardImageBig {
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  margin-bottom: 12px;
 }
-.productCardImage>img{
-    /*height: 160px;*/
+.productCardImageBig > img {
+  height: 160px;
 }
+.productCardPartners {
+  width: 318px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*         partnersInProductPage       */
 
+.partnersInProductPage{
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 200px;
+  background: var(--theme-border-color);
+  border-radius: 10px;
+  
+}
+.partnersInProductPageImage{
+
+} 
+
+.productCardImage {
+  border-radius: 10px;
+  height: 70px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #f9f9f9; */
+  margin-bottom: 12px;
+}
+.productCardImage > img {
+  height: 100%;
+  object-fit: cover;
+}
 .slick-slide:nth-child(1) .productCardBig {
   border-left: 1px solid var(--theme-border-color);
 }
-/* .productCard > img {
-  padding-top: 41px;
-  padding-left: 64px;
-  overflow: hidden;
-} */
+.sliderImageItems {
+  width: 100% !important;
+  padding: 0 !important;
+}
+.sliderImageItems {
+  border-right: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-slide:nth-child(1) .sliderImageItems {
+  border-left: 1px solid var(--theme-border-color);
+}

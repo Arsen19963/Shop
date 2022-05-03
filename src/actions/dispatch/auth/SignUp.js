@@ -13,7 +13,6 @@ export const onSignUp = (sendParams,cb) => {
                 'Content-Type': 'application/json'
             }
         };
-
         axios(options)
             .then((response) => {
                 if (!response.data.error) {
@@ -29,7 +28,6 @@ export const onSignUp = (sendParams,cb) => {
             });
     }
 };
-
 
 export const onSendPhoneCode = (code,cb) => {
     return dispatch => {

@@ -1,0 +1,76 @@
+.Products {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  /*
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 48px;
+  flex-wrap: wrap; */
+}
+.productsTitle {
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.productsMainPeaces {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.currentProduct {
+  width: 100%;
+  background: rgba(153, 88, 133, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currentProductImage{
+  padding: 12px;
+  object-fit: cover;
+
+}
+.currentProductImage > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .productsMainPeaces {
+  margin-top: 60px;
+  display: flex;
+  object-fit: cover;
+  width: 196px;
+  height: 70px;
+} */
+/* .productsList {
+  margin-top: 260px;
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+} */
+/* .productsCard {
+  object-fit: cover;
+  border: 1px solid red;
+} */
+.productsList {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+.productsCard {
+  width: 280px;
+  object-fit: cover;
+  border: 1px solid red;
+  height: 300px;
+  background: red;
+}
+.productsCard > div {
+  height: auto;
+}

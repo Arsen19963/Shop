@@ -1,8 +1,6 @@
 import React from "react";
 import Loadable from "react-loadable";
 
-
-
 const loading = () => <div>Loading...</div>;
 // function () {
 //     return new Promise(function(resolve, reject) {
@@ -20,34 +18,37 @@ const About = Loadable({
   loading,
 });
 const Careers = Loadable({
-  loader: ()=> import("../pages/Careers/Careers"),
+  loader: () => import("../pages/Careers/Careers"),
   loading,
-})
+});
 const ShowCareers = Loadable({
-  loader: ()=> import("../pages/Careers/ShowCareers"),
+  loader: () => import("../pages/Careers/ShowCareers"),
   loading,
-})
+});
 const Team = Loadable({
-  loader: ()=>import("../pages/Team/Team"),
+  loader: () => import("../pages/Team/Team"),
   loading,
-})
+});
 const ShowTeamMembers = Loadable({
-  loader: ()=>import("../pages/Team/ShowTeamMembers"),
+  loader: () => import("../pages/Team/ShowTeamMembers"),
   loading,
-})
+});
 const Partners = Loadable({
-  loader: ()=>import("../pages/Partners/Partners"),
+  loader: () => import("../pages/Partners/Partners"),
   loading,
-})
-
+});
 const Catalogue = Loadable({
-  loader: ()=>import("../pages/Catalogue/Catalogue"),
+  loader: () => import("../pages/Catalogue/Catalogue"),
   loading,
-})
+});
+const Products = Loadable({
+  loader: () => import("../pages/Products/Products"),
+  loading,
+});
 const CatalogueOpenPage = Loadable({
-  loader: ()=>import("../pages/Catalogue/CatalogueOpenPage"),
+  loader: () => import("../pages/Catalogue/CatalogueOpenPage"),
   loading,
-})
+});
 const Notfound = Loadable({
   loader: () => import("../pages/Notfound"),
   loading,
@@ -109,6 +110,13 @@ export default [
     exact: true,
     sname: "Catalogue",
     spath: "/catalogue",
+  },
+  {
+    component: Products,
+    path: "/products",
+    exact: true,
+    sname: "Products",
+    spath: "/products",
   },
   {
     component: CatalogueOpenPage,

@@ -1,0 +1,12 @@
+.Brands{
+    width: 195px;
+    height: 70px;
+    background: var(--theme-white-grey);
+    border-radius: 10px;
+}
+.Brands>img{
+    object-fit: contain;
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+}

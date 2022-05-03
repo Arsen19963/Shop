@@ -1,51 +1,48 @@
-﻿import React, {useEffect} from "react";
+﻿import React, { useEffect } from "react";
 import PremFoodsLogo from "../PremFoodsLogo/PremFoodsLogo";
 import Phone from "../../../public/icons/phone1.svg";
-import './header.css'
+import "./header.css";
 import "../../../public/style/style.css";
-import {Link} from "react-router-dom";
-import {DropDown2} from "../../component/DropDown/DropDown2.js";
+import { Link } from "react-router-dom";
+import { DropDown2 } from "../../component/DropDown/DropDown2.js";
 
-
-export const Header = ({setLang, lang,languages}) => {
-    // useEffect(()=>{
-    //     console.log('setLang',setLang)
-    //     console.log('lang',lang)
-    // },[])
-    return (
-        <div className="header">
-            <div className={"content headerFlexing"}>
-                <PremFoodsLogo/>
-                {/*{menui list}*/}
-                <div className="menuList">
-                    <ul className="menuListLies">
-                        <li>
-                            <Link to={"/about"}>{languages['about']}</Link>
-                        </li>
-                        <li>
-                            <Link to={"/catalogue"}>{languages['catalog']}</Link>
-                        </li>
-                        <li>
-                            <Link to={"/careers"}>{languages['careers']}</Link>
-                        </li>
-                        <li>
-                            <Link to={"/partners"}>{languages['partners']}</Link>
-                        </li>
-                        <li>
-                            <Link to={"/team"}>{languages['team']}</Link>
-                        </li>
-                    </ul>
-                </div>
-                {/*erkrord ikonkeq@*/}
-                <div className="secondIcons">
-                    {/*<img src={Global} alt='svgGlobal'/>*/}
-                    <div>
-                        <DropDown2 setLang={setLang} lang={lang} />
-                    </div>
-                    <div className={"vertic"}/>
-                    <img src={Phone} alt="svgPhone"/>
-                </div>
-            </div>
+export const Header = ({ setLang, lang, languages }) => {
+  return (
+    <div className="header">
+      <div className={"content headerFlexing"}>
+        <PremFoodsLogo />
+        {/*{menui list}*/}
+        <div className="menuList">
+          <ul className="menuListLies">
+            <li>
+              <Link to={"/about"}>{languages["about"]}</Link>
+            </li>
+            <li>
+              <Link to={"/products"}>{languages["products"]}</Link>
+            </li>
+            {/* <li>
+              <Link to={"/catalogue"}>{languages["catalog"]}</Link>
+            </li> */}
+            <li>
+              <Link to={"/careers"}>{languages["careers"]}</Link>
+            </li>
+            <li>
+              <Link to={"/partners"}>{languages["partners"]}</Link>
+            </li>
+            <li>
+              <Link to={"/team"}>{languages["team"]}</Link>
+            </li>
+          </ul>
         </div>
-    );
+        {/*erkrord ikonkeq@*/}
+        <div className="secondIcons">
+          <div>
+            <DropDown2 setLang={setLang} lang={lang} />
+          </div>
+          <div className={"vertic"} />
+          <img src={Phone} alt="svgPhone" />
+        </div>
+      </div>
+    </div>
+  );
 };

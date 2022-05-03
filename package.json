@@ -14,7 +14,6 @@
     "@trendyol-js/react-carousel": "^2.0.0",
     "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
