@@ -1,0 +1,28 @@
+.CardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 305px;
+  width: 284px;
+  border: 1px solid rgba(153, 88, 133, 0.34);
+  border-radius: 2px;
+  background: var(--theme-white-grey);
+  
+}
+
+.line {
+  margin-top: 30px;
+  width: 240px;
+  border: 1px solid #c4c4c4;
+  /* color: #0000; */
+}
+.CardContentText {
+  margin-top: 17px;
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+}

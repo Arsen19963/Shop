@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import s from "./productCard2.module.css";
 // import { useHistory } from "react-router-dom";
 
-export const ProductCard = ({ item, catalogPage, partners, products,partnersInProductPage,className }) => {
+export const ProductCard = ({ item, catalogPage, partners, products, partnersInProductPage, className }) => {
   if (catalogPage) {
     return (
       <Link to={`/catalogue/${item.id}`} key={item.id}>

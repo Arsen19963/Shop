@@ -7,6 +7,7 @@ import products from "./products";
 import catalogue from "./catalogue";
 import languages from "./languages";
 import lang from "./lang";
+import categories from "./categories";
 
 export default combineReducers({
   test: test,
@@ -17,4 +18,5 @@ export default combineReducers({
   catalogue: catalogue,
   languages: languages,
   lang: lang,
+  categories: categories,
 });

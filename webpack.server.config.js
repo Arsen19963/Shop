@@ -8,7 +8,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname),
         filename: 'server.js',
-        publicPath: '/'
+        publicPath: '/',
     },
     module: {
         rules: [
@@ -18,7 +18,7 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.(woff(2)?|ttf|eot|otf|svg|png|jpg|jpeg|gif)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(woff(2)?|ttf|eot|otf|svg|png|jpg|jpeg|gif|ico|ogg|wav|mp3)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                     {
                         loader: 'file-loader',

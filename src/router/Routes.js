@@ -45,6 +45,10 @@ const Products = Loadable({
   loader: () => import("../pages/Products/Products"),
   loading,
 });
+const OpenProducts = Loadable({
+  loader: () => import("../pages/Products/OpenProducts"),
+  loading,
+});
 const CatalogueOpenPage = Loadable({
   loader: () => import("../pages/Catalogue/CatalogueOpenPage"),
   loading,
@@ -112,6 +116,13 @@ export default [
     spath: "/catalogue",
   },
   {
+    component: CatalogueOpenPage,
+    path: "/catalogue/:id",
+    exact: true,
+    sname: "Catalogue",
+    spath: "/catalogue",
+  },
+  {
     component: Products,
     path: "/products",
     exact: true,
@@ -119,11 +130,11 @@ export default [
     spath: "/products",
   },
   {
-    component: CatalogueOpenPage,
-    path: "/catalogue/:id",
+    component: OpenProducts,
+    path: "/products/:id",
     exact: true,
-    sname: "Catalogue",
-    spath: "/catalogue",
+    sname: "Products",
+    spath: "/products",
   },
   {
     component: Notfound,

@@ -3,13 +3,13 @@ const reactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugi
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // mode: 'production',
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         chunkFilename: '[name].js',
         filename: '[name].js',
-        publicPath: '/'
+        publicPath: '/',
     },
     module: {
         rules: [
@@ -23,9 +23,9 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: [
-                        // {
-                        //     loader: "style-loader"
-                        // },
+                        {
+                            loader: "style-loader"
+                        },
                         {
                             loader: "css-loader"
                         }
@@ -33,7 +33,7 @@ module.exports = {
                 })
             },
             {
-                test: /\.(woff(2)?|ttf|eot|svg|png|jpg|jpeg|gif|otf)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(woff(2)?|ttf|eot|otf|svg|png|jpg|jpeg|gif|ico|ogg|wav|mp3)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                     {
                         loader: 'file-loader',

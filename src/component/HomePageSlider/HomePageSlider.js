@@ -76,7 +76,6 @@ export const HomePageSlider = () => {
                 <div className={"someText"}>
                     {checkItem.title}
                 </div>
-
                 <div className={"someTitle"}>
                     {checkItem.text}
                 </div>

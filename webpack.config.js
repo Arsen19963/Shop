@@ -1,15 +1,19 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//mode: 'production',
-// port: 7072,
+//mode: 'development',
+//port: '5020',
+
+
+
+
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js',
         chunkFilename: '[name].bundle.js',
-        publicPath: '/'
+        publicPath: '/',
     },
     devServer: {
         contentBase: path.join(__dirname),
@@ -25,7 +29,7 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.(woff(2)?|ttf|eot|otf|svg|png|jpg|jpeg|gif)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(woff(2)?|ttf|eot|otf|svg|png|jpg|jpeg|gif|ico|ogg|wav|mp3)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -51,7 +55,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/template.html'
-        })
+        }),
     ],
     optimization: {
         splitChunks: {
@@ -64,4 +68,5 @@ module.exports = {
             }
         }
     }
+
 };

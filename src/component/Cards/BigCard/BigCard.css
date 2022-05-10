@@ -1,0 +1,12 @@
+.BigCard {
+  width: 410px;
+  height: 150px;
+  background-color: var(--theme-white-grey);
+  border-radius: 10px;
+}
+.BigCard > img {
+  padding: 38px 76px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
