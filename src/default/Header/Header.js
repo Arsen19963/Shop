@@ -1,5 +1,6 @@
 ﻿import React, { useEffect } from "react";
 import PremFoodsLogo from "../PremFoodsLogo/PremFoodsLogo";
+import List from "../../../public/images/List.png";
 import Phone from "../../../public/icons/phone1.svg";
 import "./header.css";
 import "../../../public/style/style.css";
@@ -10,7 +11,14 @@ export const Header = ({ setLang, lang, languages }) => {
   return (
     <div className="header">
       <div className={"content headerFlexing"}>
-        <PremFoodsLogo />
+        
+        <div className="iconLogo">
+          <PremFoodsLogo />
+        </div>
+        <div class="ListIcon">
+          <img src={List} />
+        </div>
+
         {/*{menui list}*/}
         <div className="menuList">
           <ul className="menuListLies">
@@ -20,9 +28,6 @@ export const Header = ({ setLang, lang, languages }) => {
             <li>
               <Link to={"/products"}>{languages["products"]}</Link>
             </li>
-            {/* <li>
-              <Link to={"/catalogue"}>{languages["catalog"]}</Link>
-            </li> */}
             <li>
               <Link to={"/careers"}>{languages["careers"]}</Link>
             </li>
