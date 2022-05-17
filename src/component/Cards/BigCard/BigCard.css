@@ -10,3 +10,87 @@
   width: 100%;
   object-fit: contain;
 }
+@media(max-width: 1200px){
+  .BigCard {
+    width: 380px;
+    height: 130px;
+    background-color: var(--theme-white-grey);
+    border-radius: 10px;
+  }
+  .BigCard > img {
+    padding: 36px 74px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media(max-width: 1024px){
+  .BigCard {
+    width: 350px;
+    height: 110px;
+    background-color: var(--theme-white-grey);
+    border-radius: 10px;
+  }
+  .BigCard > img {
+    padding: 34px 72px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media(max-width: 900px){
+  .BigCard {
+    width: 340px;
+    height: 100px;
+    background-color: var(--theme-white-grey);
+    border-radius: 10px;
+  }
+  .BigCard > img {
+    padding: 34px 72px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media(max-width: 768px){
+  .BigCard {
+    width: 280px;
+    height: 80px;
+    background-color: var(--theme-white-grey);
+    border-radius: 10px;
+  }
+  .BigCard > img {
+    padding: 30px 50px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media(max-width: 600px){
+  .BigCard {
+    width: 150px;
+    height: 50px;
+    background-color: var(--theme-white-grey);
+    border-radius: 10px;
+  }
+  .BigCard > img {
+    padding: 15px 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media(max-width: 375px){
+  .BigCard {
+    width: 100px;
+    height: 40px;
+    background-color: var(--theme-white-grey);
+    border-radius: 10px;
+  }
+  .BigCard > img {
+    padding: 5px 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}

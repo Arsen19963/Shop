@@ -1,19 +1,18 @@
 .header {
-  display: flex;
-  justify-content: space-around;
+  /* padding-top: 10px;
+  display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  padding-top: 20px;
   height: 79px;
   width: 100%;
   border-bottom: 1px solid #eaeaea;
   background-color: #fff;
-
 }
 .headerFlexing {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.ListIcon {
-  display: none;
 }
 .menuList {
   padding: 0 20px;
@@ -23,7 +22,7 @@
   justify-content: space-between;
 }
 .menuListLies > li {
-  font-family: Lota Grotesque;
+  font-family: "Lota Grotesque";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -32,14 +31,21 @@
   color: #000000;
   list-style: none;
   padding: 0 30px;
+  transition: 0.5s all ease;
 }
 .menuListLies li a {
   text-decoration: none;
 }
+.menuListLies > li:hover {
+  font-size: 16px;
+  font-weight: 800;
+}
 .secondIcons {
   display: flex;
   justify-content: center;
+  /* align-self: center; */
   align-items: center;
+  z-index: 2;
 }
 .vertic {
   width: 14px;
@@ -48,18 +54,225 @@
   transform: rotate(-90deg);
   margin: 0 16px;
 }
-
-
-
-                    /*Responsive design */
-@media (max-width: 1024px) {
-  .ListIcon {
-    display: block;
+.MainIcons {
+  display: none;
+}
+/*Responsive design */
+@media (max-width: 1200px) {
+  .content {
+    max-width: 1056px;
+    box-sizing: border-box;
+    margin: auto;
   }
-  .menuList ul {
+  .menuListLies > li {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    list-style: none;
+    padding: 0 25px;
+    transition: 0.5s all ease;
+  }
+  .menuListLies > li:hover {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .vertic {
+    width: 12px;
+    height: 0.2px;
+    background: #000000;
+    transform: rotate(-90deg);
+    margin: 0 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .content {
+    max-width: 902px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  .menuListLies > li {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    list-style: none;
+    padding: 0 20px;
+    transition: 0.5s all ease;
+  }
+  .menuListLies > li:hover {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .vertic {
+    width: 12px;
+    height: 0.2px;
+    background: #000000;
+    transform: rotate(-90deg);
+    margin: 0 16px;
+  }
+}
+@media (max-width: 900px) {
+  .content {
+    max-width: 792px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  .menuListLies > li {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    list-style: none;
+    padding: 0 18px;
+    transition: 0.5s all ease;
+  }
+  .menuListLies > li:hover {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .vertic {
+    width: 10px;
+    height: 0.2px;
+    background: #000000;
+    transform: rotate(-90deg);
+    margin: 0 14px;
+  }
+}
+@media (max-width: 768px){
+  .content {
+    max-width: 670px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  
+  .menuListLies > li {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    list-style: none;
+    padding: 0 18px;
+    transition: 0.5s all ease;
+  }
+  .menuListLies > li:hover {
+    font-size: 8px;
+    font-weight: 500;
+  }
+  .vertic {
+    width: 10px;
+    height: 0.2px;
+    background: #000000;
+    transform: rotate(-90deg);
+    margin: 0 14px;
+  }
+}
+@media (max-width: 600px){
+    .content {
+      max-width:528px;
+      box-sizing: border-box;
+      margin: auto;
+    }
+    
+    .menuListLies > li {
+      font-family: "Lota Grotesque";
+      font-style: normal;
+      font-weight:200;
+      font-size: 6px;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: #000000;
+      list-style: none;
+      padding: 0 16px;
+      transition: 0.5s all ease;
+    }
+    .menuListLies > li:hover {
+      font-size: 8px;
+      font-weight: 400;
+    }
+    .vertic {
+      width: 8px;
+      height: 0.2px;
+      background: #000000;
+      transform: rotate(-90deg);
+      margin: 0 12px;
+  }
+}
+@media (max-width: 375px) {
+  .content {
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .mobileMenuListLies {
+    display: flex;
+    position: absolute;
+    width: 210px;
+    height: 280px;
+    margin-top: 15px;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    background-color: blue;
+    z-index: 3;
+  }
+  .menuListLies {
     display: none;
   }
-  .iconLogo{
-    display: block;
+  .MainIcons {
+    display: flex;
   }
+  .CloseIcon {
+    display: flex;
+    position: relative;
+    top: -15px;
+    left: 173px;
+    width: 13px;
+    height: 13px;
+    z-index: 5;
+  }
+  .CloseIcon > img {
+    height: 100%;
+    width: 100%;
+  }
+  .menuListLies > li {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 4px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #000000;
+    list-style: none;
+    padding: 0 18px;
+    transition: 0.5s all ease;
+  }
+  .menuListLies > li:hover {
+    font-size: 6px;
+    font-weight: 300;
+  }
+  .vertic {
+    width: 6px;
+    height: 0.2px;
+    background: #000000;
+    transform: rotate(-90deg);
+    margin: 0 10px;
+  }
+  /* .headerFlexing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  } */
 }

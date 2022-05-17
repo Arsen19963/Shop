@@ -1,50 +1,356 @@
-.showMembers{
-    margin-top: 120px;
+.showMembers {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.showTeamMembersMain {
+  width: 427px;
+  max-height: 427px;
+  height: auto;
+  object-fit: cover;
+}
+.showTeamMembersMain > img {
+  width: 100%;
+  height: 100%;
+  /*overflow: hidden;*/
+}
+.showMembersTitle {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  /*align-items: center;*/
+}
+.nameSurname {
+  font-family: "Lota Grotesque";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px;
+}
+.position {
+  font-family: "Lota Grotesque";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  color: #808080;
+}
+.introduction {
+  font-family: "Lota Grotesque";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  width: 580px;
+}
+@media (max-width: 1200px) {
+  .showMembers {
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
-}
-.showTeamMembersMain{
-    width: 427px;
-    height: 427px;
+  }
+  .showTeamMembersMain {
+    width: 400px;
+    max-height: 400px;
+    height: auto;
     object-fit: cover;
-}
-.showTeamMembersMain >img{
+  }
+  .showTeamMembersMain > img {
     width: 100%;
     height: 100%;
     /*overflow: hidden;*/
-
-}
-.showMembersTitle{
+  }
+  .showMembersTitle {
     display: flex;
     flex-direction: column;
     font-family: "Lota Grotesque";
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 39px;
+    font-size: 28px;
+    line-height: 37px;
     /*align-items: center;*/
-
-}
-.nameSurname{
-    font-family: 'Lota Grotesque';
-    font-size: 30px;
+  }
+  .nameSurname {
+    font-family: "Lota Grotesque";
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
-    line-height: 39px;
-}
-.position{
-    font-family: 'Lota Grotesque';
-    font-size: 18px;
+    line-height: 37px;
+  }
+  .position {
+    font-family: "Lota Grotesque";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #808080;
+  }
+  .introduction {
+    font-family: "Lota Grotesque";
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 23px;
-    color: #808080;
+    width: 550px;
+  }
 }
-.introduction{
-    font-family: 'Lota Grotesque';
+@media (max-width: 1024px) {
+  .showMembers {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .showTeamMembersMain {
+    width: 370px;
+    max-height: 370px;
+    height: auto;
+    object-fit: cover;
+  }
+  .showTeamMembersMain > img {
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+  }
+  .showMembersTitle {
+    display: flex;
+    flex-direction: column;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 35px;
+    /*align-items: center;*/
+  }
+  .nameSurname {
+    font-family: "Lota Grotesque";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37px;
+  }
+  .position {
+    font-family: "Lota Grotesque";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 23px;
-    width: 580px;
+    line-height: 21px;
+    color: #808080;
+  }
+  .introduction {
+    font-family: "Lota Grotesque";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    width: 500px;
+  }
+}
+@media (max-width: 900px) {
+  .showMembers {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .showTeamMembersMain {
+    width: 350px;
+    max-height: 350px;
+    height: auto;
+    object-fit: cover;
+  }
+  .showTeamMembersMain > img {
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+  }
+  .showMembersTitle {
+    display: flex;
+    flex-direction: column;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    /*align-items: center;*/
+  }
+  .nameSurname {
+    font-family: "Lota Grotesque";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+  }
+  .position {
+    font-family: "Lota Grotesque";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #808080;
+  }
+  .introduction {
+    font-family: "Lota Grotesque";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .showMembers {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .showTeamMembersMain {
+    width: 300px;
+    max-height: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  .showTeamMembersMain > img {
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+  }
+  .showMembersTitle {
+    display: flex;
+    flex-direction: column;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+    /*align-items: center;*/
+  }
+  .nameSurname {
+    font-family: "Lota Grotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .position {
+    font-family: "Lota Grotesque";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #808080;
+  }
+  .introduction {
+    font-family: "Lota Grotesque";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    width: 350px;
+  }
+}
+@media (max-width: 600px) {
+  .showMembers {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .showTeamMembersMain {
+    width: 260px;
+    /* max-height: 260px; */
+    height: auto;
+    object-fit: cover;
+  }
+  .showTeamMembersMain > img {
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+  }
+  .showMembersTitle {
+    display: flex;
+    flex-direction: column;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    /*align-items: center;*/
+  }
+  .nameSurname {
+    font-family: "Lota Grotesque";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .position {
+    font-family: "Lota Grotesque";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    color: #808080;
+  }
+  .introduction {
+    font-family: "Lota Grotesque";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    width: 250px;
+  }
+}
+@media (max-width: 375px) {
+  .showMembers {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .showTeamMembersMain {
+    width: 350px;
+    height: 330px;
+    height: auto;
+    object-fit: cover;
+  }
+  .showTeamMembersMain > img {
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+  }
+  .showMembersTitle {
+    margin-top: 280px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    /*align-items: center;*/
+  }
+  .nameSurname {
+    font-family: "Lota Grotesque";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .position {
+    font-family: "Lota Grotesque";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    color: #808080;
+  }
+  .introduction {
+    font-family: "Lota Grotesque";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    width: 250px;
+  }
 }

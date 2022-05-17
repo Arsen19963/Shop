@@ -17,17 +17,47 @@ export const Products = ({ partners, products, categories }) => {
   //   setBrandsItem(filteredData);
   //   console.log(setBrandsItem);
   // };
+
   console.log(partners);
   return (
     <div className="Products">
-      <div className="startPage content">
+      {/* es vor mtnum es Product ej saya ashxatum։։։
+      
+      https://www.figma.com/proto/4leyeX1Zspp338jj8Xs3HN/premier-food?node-id=3%3A53&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1&hide-ui=1
+      
+      */}
+      {/* <div className="startPage ">
         <BigCard partners={partners} />
+      </div> */}
+
+
+      <div className="productsMainPeaces">
+        <div className="content">
+          <Brands partners={partners} />
+        </div>
       </div>
 
-      <div className="content">
-        <div className="productsMainPeaces">
-          {/* <Brands filter={filter} partners={partners} /> */}
+      <div className="currentProduct">
+        <div className="currentProductImage">
+          <img src={partners.image} />
         </div>
+      </div>
+
+      <div className="productsByCategories">
+        <div className="content">
+          {partners &&
+            partners.map((item) => {
+              return (
+                <div key={item.id}>
+                  <Categories item={item} />
+                </div>
+              );
+            })}
+        </div>
+      </div>
+
+      <div className="productsList content">
+        <CardContent products={products} />
       </div>
     </div>
   );
@@ -47,30 +77,3 @@ export default connect(
     },
   })
 )(Products);
-
-
-{
-  /* <div className="currentProduct">
-        <div className="currentProductImage">
-          <img src={partners} />
-        </div>
-      </div> */
-}
-{
-  /* <div className="productsByCategories content">
-        {partners &&
-          partners.map((item) => {
-            return (
-              <div key={item.id}>
-                <Categories item={item} />
-              </div>
-            );
-          })}
-      </div> */
-}
-{
-  /* 
-      <div className="productsList content">
-        <CardContent brandsItem={brandsItem} />
-      </div> */
-}

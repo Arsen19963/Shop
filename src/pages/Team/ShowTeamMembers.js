@@ -11,16 +11,14 @@ const ShowTeamMembers = ({ match, members }) => {
   }, [id]);
   if (data) {
     return (
-      <div>
-        <div className={"content showMembers"}>
-          <div className="showTeamMembersMain">
-            <img src={data.img} />
-          </div>
-          <div className={"showMembersTitle"}>
-            <div className={"nameSurname"}>{data.title}</div>
-            <div className={"position"}>{data.position}</div>
-            <div className="introduction">{data.introduction}</div>
-          </div>
+      <div className={"content showMembers"}>
+        <div className="showTeamMembersMain">
+          <img src={data.img} />
+        </div>
+        <div className={"showMembersTitle"}>
+          <div className={"nameSurname"}>{data.title}</div>
+          <div className={"position"}>{data.position}</div>
+          <div className="introduction">{data.introduction}</div>
         </div>
       </div>
     );

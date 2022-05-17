@@ -1,8 +1,26 @@
 .premFood {
+    margin-top: 10px;
     align-items: center;
 }
 .headIcon {
     width: 99px;
     height: 26px;
-    
+}
+@media(max-width: 1200px) {
+    .headIcon {
+        width: 89px;
+        height: 24px;
+    }
+}
+@media(max-width: 1024px) {
+    .headIcon {
+        width: 79px;
+        height: 22px;
+    }
+}
+@media(max-width: 900px) {
+    .headIcon {
+        width: 69px;
+        height: 20px;
+    }
 }

@@ -36,12 +36,12 @@ export const Team = ({ members }) => {
   return (
     <div>
       <div className="contentWrapper content">
-        <div className="workTeamChef">
+        {/* <div className="workTeamChef">
           <p className="workTeamTitle">Chief executive officer</p>
           <div className="ourTeamMembers">
             <OurTeam members={main} />
           </div>
-        </div>
+        </div> */}
         <div className="teamMain">
           <p className="teamMainTitle">Our Team</p>
           <p className="teamMainTitle_2">Premier Foods LLC | General Team </p>

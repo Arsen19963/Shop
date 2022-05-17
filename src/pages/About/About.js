@@ -29,26 +29,25 @@ export const About = ({ members }) => {
   }, [members]);
   return (
     <div>
-      <div className={"content aboutContent"}>
-        <div className={"historyAbout"}>
-          <InformationPanel
-            title={"History of Premier Foods"}
-            mainText={true}
-            mainTextInfo={
-              "Another introtext here need to write maybe 3 lines and" +
-              " its enough The company was founded 2012 year. In the first half " +
-              "becoming a food producer Nestle Company: (brands: KitKat, Nesquik," +
-              " Nuts, Good Mix, Nestle, Rossia, Nescafe, BonPari, Bistroff, Torchin" +
-              ", Mivina, Maggi, Fitness, Nan, Nestogen, Gerber, Fellix, Frieskes," +
-              " Darling, ProPlan) official Representative in Armenia. In 2016" +
-              " joined our company world famous Makfa Company"
-            }
-            outLine={true}
-            image={true}
-          />
-        </div>
+      <div className="aboutInformationPanel">
+        <InformationPanel
+          title={"History of Premier Foods"}
+          mainText={true}
+          outLine={true}
+          image={true}
+          imgStyle={true}
+          container={true}
+          mainTextInfo={
+            "Another introtext here need to write maybe 3 lines and" +
+            " its enough The company was founded 2012 year. In the first half " +
+            "becoming a food producer Nestle Company: (brands: KitKat, Nesquik," +
+            " Nuts, Good Mix, Nestle, Rossia, Nescafe, BonPari, Bistroff, Torchin" +
+            ", Mivina, Maggi, Fitness, Nan, Nestogen, Gerber, Fellix, Frieskes," +
+            " Darling, ProPlan) official Representative in Armenia. In 2016" +
+            " joined our company world famous Makfa Company"
+          }
+        />
       </div>
-
       <div className={"weInIndustry"}>
         <div>
           <img src={Star} />

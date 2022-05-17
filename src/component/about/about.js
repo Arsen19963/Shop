@@ -6,8 +6,11 @@ import { Button } from "../Button/Button";
 export const About = () => {
   return (
     <div className={"about content"}>
+      <div className={"imgContent"}>
+        {/*rigth part*/}
+        <img className={"sweets"} src={AboutImage} />
+      </div>
       <div className={"aboutInfo"}>
-      
         {/*left part*/}
         <div className={"title"}>
           <p>About</p>
@@ -23,10 +26,6 @@ export const About = () => {
         <div className={"textContentButton"}>
           <Button title={"Know more"} outline={false} />
         </div>
-      </div>
-      <div className={"imgContent"}>
-        {/*rigth part*/}
-        <img className={"sweets"} src={AboutImage} />
       </div>
     </div>
   );

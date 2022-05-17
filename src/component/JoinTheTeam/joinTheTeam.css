@@ -1,15 +1,73 @@
 .joinTheTeam {
-    background: url("../../../public/images/workplace.jpg");
-    height: 900px;
-    max-width: 1280px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+  background: url("../../../public/images/workplace.jpg");
+  min-height: 900px;
+  height: auto;
+  width: 100%;
+  max-width: 1280px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 /*.joinTheTeam div p {*/
 /*    color: var(--theme-white)!important;*/
 /*}*/
 .joinTheTeam:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.mainTitle {
+  margin-top: 320px;
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.textInfo {
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  max-width: 560px;
+  width: 100%;
+}
+
+.joinTheTeam div p {
+  color: var(--theme-white) !important;
+}
+
+.joinTheTeamContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 167px;
+}
+.joinTheTeamButton {
+  margin-top: 40px;
+}
+@media (max-width: 1200px) {
+  .joinTheTeam {
+    background: url("../../../public/images/workplace.jpg");
+    min-height: 800px;
+    height: auto;
+    width: 100%;
+    /* max-width: 1280px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .joinTheTeam:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -18,40 +76,324 @@
     left: 0;
     top: 0;
     z-index: 1;
-}
+  }
 
-.mainTitle {
-    margin-top: 320px;
+  .mainTitle {
+    margin-top: 300px;
     font-family: "Lota Grotesque";
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 55px;
+  }
 
-}
-
-.textInfo {
+  .textInfo {
     font-family: "Lota Grotesque";
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 24px;
     text-align: center;
-    max-width: 560px;
+    max-width: 540px;
     width: 100%;
-}
+  }
 
-.joinTheTeam  div  p {
-    color: var(--theme-white)!important;
-}
+  .joinTheTeam div p {
+    color: var(--theme-white) !important;
+  }
 
-.joinTheTeamContent {
+  .joinTheTeamContent {
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 167px;
+    margin-top: 160px;
+  }
+  .joinTheTeamButton {
+    margin-top: 35px;
+  }
 }
-.joinTheTeamButton{
-    margin-top: 40px;
+@media (max-width: 1024px) {
+  .joinTheTeam {
+    background: url("../../../public/images/workplace.jpg");
+    min-height: 700px;
+    height: auto;
+    width: 100%;
+    /* max-width: 1280px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .joinTheTeam:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .mainTitle {
+    margin-top: 280px;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+  }
+
+  .textInfo {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 540px;
+    width: 100%;
+  }
+
+  .joinTheTeam div p {
+    color: var(--theme-white) !important;
+  }
+
+  .joinTheTeamContent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+  }
+  .joinTheTeamButton {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 900px) {
+  .joinTheTeam {
+    background: url("../../../public/images/workplace.jpg");
+    min-height: 600px;
+    height: auto;
+    width: 100%;
+    /* max-width: 1280px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .joinTheTeam:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .mainTitle {
+    margin-top: 240px;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .textInfo {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 520px;
+    width: 100%;
+  }
+
+  .joinTheTeam div p {
+    color: var(--theme-white) !important;
+  }
+
+  .joinTheTeamContent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+  }
+  .joinTheTeamButton {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .joinTheTeam {
+    background: url("../../../public/images/workplace.jpg");
+    min-height: 550px;
+    height: auto;
+    width: 100%;
+    /* max-width: 1280px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .joinTheTeam:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .mainTitle {
+    margin-top: 220px;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+  }
+
+  .textInfo {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .joinTheTeam div p {
+    color: var(--theme-white) !important;
+  }
+
+  .joinTheTeamContent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+  }
+  .joinTheTeamButton {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .joinTheTeam {
+    background: url("../../../public/images/workplace.jpg");
+    min-height: 500px;
+    height: auto;
+    width: 100%;
+    /* max-width: 1280px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .joinTheTeam:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .mainTitle {
+    margin-top: 200px;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .textInfo {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .joinTheTeam div p {
+    color: var(--theme-white) !important;
+  }
+
+  .joinTheTeamContent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .joinTheTeamButton {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .joinTheTeam {
+    background: url("../../../public/images/workplace.jpg");
+    min-height: 245px;
+    height: auto;
+    width: 100%;
+    /* max-width: 1280px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .joinTheTeam:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .mainTitle {
+    margin-top: 34px;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .textInfo {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+  }
+  .joinTheTeam div p {
+    color: var(--theme-white) !important;
+  }
+
+  .joinTheTeamContent {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .joinTheTeamButton {
+    margin-top: 20px;
+  }
 }

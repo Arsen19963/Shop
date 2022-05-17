@@ -15,6 +15,8 @@ export const Careers = ({ careers }) => {
           outline={false}
           image={false}
           mainText={false}
+          container={false}
+          imgStyle={false}
           mainTextInfo={
             "Another introtext here need to write about careers and" +
             " opportunities that can suggest Premier Foods and Beverages company"

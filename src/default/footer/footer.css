@@ -2,93 +2,172 @@ a,
 a:link,
 a:visited,
 a:hover,
-a:active{
-    text-decoration: none;
+a:active {
+  text-decoration: none;
 }
 .footer {
-    width: 100%;
-    /*display: flex;*/
-    background: #F9F9F9;
-    margin-top: 60px;
+  width: 100%;
+  /*display: flex;*/
+  background: #f9f9f9;
+  margin-top: 60px;
 }
-.everyElem{
-    margin: 70px 0;
+.everyElem {
+  margin: 70px 0;
 }
 .footerFlexing {
-    display: flex;
-    justify-content: space-between;
-}
-/*.againFirstList {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*}*/
-.li:last-child{
-    margin-bottom: unset;
-}
-/*.againFirstList li {*/
-/*    font-family: Lota Grotesque;*/
-/*    font-style: normal;*/
-/*    font-weight: bold;*/
-/*    font-size: 12px;*/
-/*    line-height: 16px;*/
-/*    text-transform: uppercase;*/
-/*    margin-bottom: 20px;*/
-/*    list-style: none;*/
-/*}*/
-.everyElem ul li{
-    margin-bottom: 20px;
-    font-family: Lota Grotesque;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    list-style: none;
-}
-.everyElem ul li a {
-    text-decoration: none;
-}
-.everyElem ul{
-    list-style-type: none;
-}
-.socialMedia{
-    margin-top: 14px;
-    display: flex;
-}
-.socialMedia li{
-    margin-right: 21px;
-}
-.socialMedia li:last-child {
-    margin-right: unset;
-}
-.socialMedia li img {
-    width: 28px;
-    height: 28px;
-}
-.fourhFoot>span>{
-    font-family: Lota Grotesque;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    text-transform: uppercase;
-    /*margin-bottom: 40px;*/
-    text-decoration: none;
+  display: flex;
+  justify-content: space-between;
 }
 
-.tail{
-    height: 51px;
-    border-top: 1px solid #EAEAEA;
-    background: #F9F9F9;
+.li:last-child {
+  margin-bottom: unset;
 }
-.tailFlexing{
-    display: flex;
-    justify-content: space-between;
-    /*align-content: center;*/
-    margin-top: 18px;
+
+.everyElem ul li {
+  margin-bottom: 20px;
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  list-style: none;
 }
-/*.tailFlexing div{*/
-/*    margin-top: 15px;*/
-/*}*/
+.everyElem ul li a {
+  text-decoration: none;
+}
+.everyElem ul {
+  list-style-type: none;
+}
+.socialMedia {
+  margin-top: 14px;
+  display: flex;
+}
+.socialMedia li {
+  margin-right: 21px;
+}
+.socialMedia li:last-child {
+  margin-right: unset;
+}
+.socialMedia li img {
+  width: 28px;
+  height: 28px;
+}
+.fourhFoot > span  {
+  font-family: "Lota Grotesque";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  /*margin-bottom: 40px;*/
+  text-decoration: none;
+}
+
+.tail {
+  height: 51px;
+  border-top: 1px solid #eaeaea;
+  background: #f9f9f9;
+}
+.tailFlexing {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+@media (max-width: 600px) {
+  .footer {
+    margin-top: 50px;
+  }
+  .everyElem {
+    margin: 60px 0;
+  }
+  .everyElem ul li {
+    margin-bottom: 17px;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    list-style: none;
+  }
+  .socialMedia {
+    margin-top: 12px;
+  }
+  .socialMedia li {
+    margin-right: 20px;
+  }
+  .socialMedia li img {
+    width: 25px;
+    height: 25px;
+  }
+  .fourhFoot > span > {
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .tail {
+    height: 45px;
+    border-top: 1px solid #eaeaea;
+    background: #f9f9f9;
+  }
+  .tailFlexing {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 375px) {
+    .footer {
+      margin-top: 30px;
+    }
+    .everyElem {
+      margin: 5px 0;
+    }
+    .everyElem ul li {
+      margin-bottom: 10px;
+      font-family: "Lota Grotesque";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 10px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      list-style: none;
+    }
+    .socialMedia {
+      margin-top: 10px;
+    }
+    .socialMedia li {
+      margin-right: 15px;
+    }
+    .socialMedia li img {
+      width: 24px;
+      height: 24px;
+    }
+    .fourhFoot > span {
+      font-family: "Lota Grotesque";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 13px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .tail {
+      height: 30px;
+      border-top: 1px solid #eaeaea;
+      background: #f9f9f9;
+    }
+    .tailFlexing {
+      margin-top: 15px;
+    }
+    .copyRight{
+        position: relative;
+        top: 30px;
+    }
+  }

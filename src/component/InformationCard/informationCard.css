@@ -1,31 +1,233 @@
-.InformationCardMainTitle{
-    font-family: 'Lota Grotesque';
-    font-size: 30px;
+.careersItem {
+  width: 43%;
+  margin-top: 70px;
+}
+.InformationCardMainTitle {
+  font-family: "Lota Grotesque";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px;
+}
+.deadline {
+  font-family: "Lota Grotesque";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  color: #c4c4c4;
+}
+.InformationCardText {
+  width: 100%;
+  /*max-width: 442px;*/
+  font-family: "Lota Grotesque";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .careersItem {
+    width: 43%;
+    margin-top: 60px;
+  }
+  .InformationCardMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
-    line-height: 39px;
-}
-.deadline{
-    font-family: 'Lota Grotesque';
-    font-size: 16px;
+    line-height: 37px;
+  }
+  .deadline {
+    font-family: "Lota Grotesque";
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 23px;
-    color: #C4C4C4;
-}
-.InformationCardText{
+    line-height: 21px;
+    color: #c4c4c4;
+  }
+  .InformationCardText {
     width: 100%;
     /*max-width: 442px;*/
-    font-family: 'Lota Grotesque';
-    font-size: 16px;
+    font-family: "Lota Grotesque";
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 21px;
     text-align: justify;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 9px;
+    margin-bottom: 28px;
+  }
 }
-.careersItem{
+@media (max-width: 1024px) {
+  .careersItem {
     width: 43%;
-    margin-top: 70px;
+    margin-top: 50px;
+  }
+  .InformationCardMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+  }
+  .deadline {
+    font-family: "Lota Grotesque";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    color: #c4c4c4;
+  }
+  .InformationCardText {
+    width: 100%;
+    /*max-width: 442px;*/
+    font-family: "Lota Grotesque";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: justify;
+    margin-top: 8px;
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 900px) {
+  .careersItem {
+    width: 43%;
+    margin-top: 48px;
+  }
+  .InformationCardMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+  }
+  .deadline {
+    font-family: "Lota Grotesque";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #c4c4c4;
+  }
+  .InformationCardText {
+    width: 100%;
+    /*max-width: 442px;*/
+    font-family: "Lota Grotesque";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: justify;
+    margin-top: 7px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .careersItem {
+    width: 43%;
+    margin-top: 46px;
+  }
+  .InformationCardMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px;
+  }
+  .deadline {
+    font-family: "Lota Grotesque";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #c4c4c4;
+  }
+  .InformationCardText {
+    width: 100%;
+    /*max-width: 442px;*/
+    font-family: "Lota Grotesque";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .careersItem {
+    width: 43%;
+    margin-top: 44px;
+  }
+  .InformationCardMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  .deadline {
+    font-family: "Lota Grotesque";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #c4c4c4;
+  }
+  .InformationCardText {
+    width: 100%;
+    /*max-width: 442px;*/
+    font-family: "Lota Grotesque";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .careersItem {
+    width:100%;
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+  }
+  .InformationCardMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  .deadline {
+    font-family: "Lota Grotesque";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #c4c4c4;
+  }
+  .InformationCardText {
+    width: 100%;
+    /*max-width: 442px;*/
+    font-family: "Lota Grotesque";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 }

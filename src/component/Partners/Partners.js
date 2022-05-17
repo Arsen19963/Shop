@@ -14,11 +14,10 @@ export const Partners = ({ render, size, partners }) => {
     { id: 2, image: Purina, name: "Some product name" },
     { id: 3, image: Rawlife, name: "Some product name" },
   ]);
-  console.log('test',sliderImage);
+  console.log("test", sliderImage);
   useEffect(() => {
     console.log("render slider");
   }, [render]);
-
   var settings = {
     dots: false,
     infinite: true,

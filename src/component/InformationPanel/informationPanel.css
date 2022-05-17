@@ -1,67 +1,301 @@
 .historyAbout {
-    display: flex;
-    /*justify-content: space-between;*/
+  margin-top: 10px;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 
-.twoSec {
-    flex: 90%;
+/* .twoSec {
+  flex: 90%;
 }
-
 .twoSecSecond {
-    flex: 0.8
-    /*border: 1px solid black;*/
+  flex: 10%;
+  border: 1px solid black;
+}  */
+.aboutContainer {
+  display: flex;
+  justify-content: space-between;
 }
-
+.careersContainer {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
 .aboutTitle {
-    max-width: 630px;
+  max-width: 630px;
+  width: 100%;
+  font-family: "Lota Grotesque";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: bold;
+}
+.textAbout {
+  width: 100%;
+  max-width: 942px;
+  font-family: "Lota Grotesque";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+}
+.textCareers {
+  width: 100%;
+  max-width: 580px;
+  font-family: "Lota Grotesque";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px;
+  /*border: 1px solid black;*/
+}
+.aboutImage {
+  /* flex: 10%; */
+  margin-top: 76px;
+  height: 255px;
+  width: 258px;
+}
+.aboutImage > img {
+  width: 100%;
+  height: 100%;
+}
+.careersImage {
+  max-width: 618px;
+  max-height: 327px;
+  height: auto;
+  /* flex: 0.2; */
+  /*margin-top: 256px;*/
+}
+.careersImage > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1200px) {
+  .aboutTitle {
+    max-width: 550px;
     width: 100%;
-    font-family: 'Lota Grotesque';
-    font-size: 80px;
+    font-family: "Lota Grotesque";
+    font-size: 73px;
     font-style: normal;
     font-weight: bold;
-}
-
-.textAbout {
+  }
+  .textAbout {
     width: 100%;
-    max-width: 942px;
-    font-family: 'Lota Grotesque';
+    max-width: 900px;
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .aboutImage {
+    /* flex: 10%; */
+    margin-top: 50px;
+    height: 220px;
+    width: 230px;
+  }
+  .textCareers {
+    width: 100%;
+    max-width: 550px;
+    font-family: "Lota Grotesque";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+  }
+  .careersImage {
+    max-width: 450px;
+  }
+}
+@media (max-width: 1024px) {
+  .aboutTitle {
+    max-width: 450px;
+    width: 100%;
+    font-family: "Lota Grotesque";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .textAbout {
+    width: 100%;
+    max-width: 800px;
+    font-family: "Lota Grotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+  }
+  .aboutImage {
+    flex: 10%;
+    margin-top: 235px;
+    height: 180px;
+    width: 190px;
+  }
+  .textCareers {
+    width: 100%;
+    max-width: 500px;
+    font-family: "Lota Grotesque";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  .careersImage {
+    max-width: 400px;
+  }
+}
+@media (max-width: 900px) {
+  .aboutTitle {
+    max-width: 350px;
+    width: 100%;
+    font-family: "Lota Grotesque";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .textAbout {
+    width: 100%;
+    max-width: 700px;
+    font-family: "Lota Grotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .aboutImage {
+    flex: 10%;
+    margin-top: 200px;
+    height: 170px;
+    width: 180px;
+  }
+  .textCareers {
+    width: 100%;
+    max-width: 450px;
+    font-family: "Lota Grotesque";
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 32px;
+  }
+  .careersImage {
+    max-width: 320px;
+  }
 }
-
-.textAboutSecond {
+@media (max-width: 768px) {
+  .aboutTitle {
+    max-width: 300px;
     width: 100%;
-    max-width: 633px;
-    font-family: 'Lota Grotesque';
-    font-size: 30px;
+    font-family: "Lota Grotesque";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .textAbout {
+    width: 100%;
+    max-width: 580px;
+    font-family: "Lota Grotesque";
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 39px;
-    /*border: 1px solid black;*/
-}
-
-.historyAboutImg {
+    line-height: 30px;
+  }
+  .aboutImage {
     flex: 10%;
-    margin-top: 256px;
-    height: 255px;
-    width: 258px;
-}
-
-.historyAboutImg > img {
+    margin-top: 100px;
+    height: 160px;
+    width: 170px;
+  }
+  .textCareers {
     width: 100%;
-    height: 100%;
+    max-width: 350px;
+    font-family: "Lota Grotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .careersImage {
+    max-width: 300px;
+  }
 }
-.historyAboutImgSecond {
+@media (max-width: 600px) {
+  .aboutTitle {
+    max-width: 250px;
+    width: 100%;
+    font-family: "Lota Grotesque";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+  }
+  .textAbout {
+    width: 100%;
+    max-width: 360px;
+    font-family: "Lota Grotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px;
+  }
+  .aboutImage {
+    flex: 10%;
+    margin-top: 175px;
+    height: 140px;
+    width: 150px;
+  }
+  .textCareers {
+    width: 100%;
+    max-width: 180px;
+    font-family: "Lota Grotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .careersImage {
+    max-width: 250px;
+  }
+}
+@media (max-width: 375px) {
+  .careersContainer {
     display: flex;
-    flex: 0.2;
-    justify-content: center;
-    align-items: center;
-    /*margin-top: 256px;*/
-    /*height: 327px;*/
-    /*width: 618px;*/
-}
-.historyAboutImgSecond > img {
-    /*height: 255px;*/
+    flex-direction: column;
+  }
+  /* .twoSecSecond{
+    display: flex;
+    flex-direction: column;
+  } */
+  .aboutTitle {
+    /* max-width: 210px; */
+    font-family: "Lota Grotesque";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  .textAbout {
+    width: 100%;
+    max-width: 240px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .aboutImage {
+    flex: 10%;
+    margin-top: 10px;
+    height: 80px;
+    width: 90px;
+  }
+  .textCareers {
+    max-width: 355px;
+    font-family: "Lota Grotesque Alt 1";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .careersImage {
+    max-width: 355px;
+  }
 }

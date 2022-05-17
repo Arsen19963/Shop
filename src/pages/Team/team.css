@@ -23,8 +23,8 @@
   line-height: 39px;
   margin-bottom: 80px;
 }
-.workTeam{
-    margin-top: 100px;
+.workTeam {
+  margin-top: 100px;
 }
 .workTeamTitle {
   display: flex;
@@ -37,21 +37,241 @@
   line-height: 70px;
   margin-bottom: 80px;
 }
-.TeamMembers{
+/* .TeamMembers {
   width: 500px;
   height: 300px;
   border: 1px solid black;
 }
-.teamMembersCards{
+.teamMembersCards {
   width: 350px;
   height: 200px;
-}
-.ourTeamMembers>div{
+} */
+.ourTeamMembers > div {
   display: flex;
   flex-wrap: wrap;
 }
-.workTeamChef{
+.workTeamChef {
   display: flex;
   flex-direction: column;
-align-content: center;
+  align-content: center;
+}
+@media (max-width: 1200px) {
+  .teamMain {
+    margin-top: 100px;
+  }
+  .teamMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 75px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 85px;
+  }
+  .teamMainTitle_2 {
+    margin-top: 19px;
+    font-family: "Lota Grotesque";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 70px;
+  }
+  .workTeam {
+    margin-top: 90px;
+  }
+  .workTeamTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lota Grotesque";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 65px;
+    margin-bottom: 70px;
+  }
+  .TeamMembers {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+  }
+  .TeamMembers {
+    width: 480px;
+    height: 280px;
+    border: 1px solid black;
+  }
+}
+@media (max-width: 1024px) {
+  .teamMain {
+    margin-top: 80px;
+  }
+  .teamMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 80px;
+  }
+  .teamMainTitle_2 {
+    margin-top: 18px;
+    font-family: "Lota Grotesque";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+    margin-bottom: 60px;
+  }
+  .workTeam {
+    margin-top: 80px;
+  }
+  .workTeamTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lota Grotesque";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 900px) {
+  .teamMain {
+    margin-top: 70px;
+  }
+  .teamMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 75px;
+  }
+  .teamMainTitle_2 {
+    margin-top: 17px;
+    font-family: "Lota Grotesque";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px;
+    margin-bottom: 50px;
+  }
+  .workTeam {
+    margin-top: 70px;
+  }
+  .workTeamTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lota Grotesque";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .teamMain {
+    margin-top: 60px;
+  }
+  .teamMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 65px;
+  }
+  .teamMainTitle_2 {
+    margin-top: 16px;
+    font-family: "Lota Grotesque";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+  .workTeam {
+    margin-top: 60px;
+  }
+  .workTeamTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lota Grotesque";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .teamMain {
+    margin-top: 50px;
+  }
+  .teamMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  .teamMainTitle_2 {
+    margin-top: 15px;
+    font-family: "Lota Grotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+  .workTeam {
+    margin-top: 50px;
+  }
+  .workTeamTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lota Grotesque";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width:375px) {
+  .teamMain {
+    margin-top: 40px;
+  }
+  .teamMainTitle {
+    font-family: "Lota Grotesque";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  .teamMainTitle_2 {
+    margin-top: 15px;
+    font-family: "Lota Grotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+  .workTeam {
+    margin-top: 50px;
+  }
+  .workTeamTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lota Grotesque";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
 }

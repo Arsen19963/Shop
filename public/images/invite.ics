@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20220513T083000Z
+DTEND:20220513T090000Z
+DTSTAMP:20220512T154429Z
+ORGANIZER;CN=Calendly Bookings:mailto:c_rpnq4pe5jbh1mtnrk0pts3haes@group.ca
+ lendar.google.com
+UID:7u90anopeskisqgq79cfsf4kmg@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Calendly Bookings;X-NUM-GUESTS=0:mailto:c_rpnq4pe5jbh1mtnrk0pts3haes@gr
+ oup.calendar.google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=ars-kargin@mail.ru;X-NUM-GUESTS=0:mailto:ars-kargin@mail.ru
+X-GOOGLE-CONFERENCE:https://meet.google.com/aon-pppa-ont
+X-MICROSOFT-CDO-OWNERAPPTID:-250104383
+CREATED:20220512T154428Z
+DESCRIPTION:Event Name: Interview with Lionix\n\nInterview with Lionix\n\nL
+ ocation: This is a Google Meet web conference.\nYou can join this meeting f
+ rom your computer\, tablet\, or smartphone.\nhttps://calendly.com/events/5e
+ f3be50-77dc-4518-88b1-b612c7fe532e/google_meet\n\nNeed to make changes to t
+ his event?\nCancel: https://calendly.com/cancellations/a91d9c56-781d-4761-9
+ d75-5db078cbffcf\nReschedule: https://calendly.com/reschedulings/a91d9c56-7
+ 81d-4761-9d75-5db078cbffcf\n\nPowered by Calendly.com\n\n\n-::~:~::~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nDo
+  not edit this section of the description.\n\nThis event has a video call.\
+ nJoin: https://meet.google.com/aon-pppa-ont\n(US) +1 518-759-2487 PIN: 4583
+ 74593#\nView more phone numbers: https://tel.meet/aon-pppa-ont?pin=49122657
+ 86785&hs=7\n\nView your event at https://calendar.google.com/calendar/event
+ ?action=VIEW&eid=N3U5MGFub3Blc2tpc3FncTc5Y2ZzZjRrbWcgYXJzLWthcmdpbkBtYWlsLn
+ J1&tok=NTQjY19ycG5xNHBlNWpiaDFtdG5yazBwdHMzaGFlc0Bncm91cC5jYWxlbmRhci5nb29n
+ bGUuY29tMThhY2U5NjgxYzg5YTg3MjA3MWE0MmE3Nzc0MzE2NzI0YjM3MTc0MA&ctz=Europe%2
+ FBerlin&hl=en&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20220512T154428Z
+LOCATION:Google Meet (instructions in description)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Arsen  and Lionix
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
